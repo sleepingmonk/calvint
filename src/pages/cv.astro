@@ -1,0 +1,143 @@
+---
+import Card from '../components/Molecules/Card/Card.astro';
+import Footer from '../components/Organisms/Footer/Footer.astro';
+import Header from '../components/Organisms/Header/Header.astro';
+import Nav from '../components/Molecules/Nav/Nav.astro';
+import Section from '../components/Organisms/Section/Section.astro';
+import Stark from '../layouts/Stark.astro';
+import Switch from '../components/Atoms/Switch/Switch.astro';
+
+---
+
+<Stark title="About Calvin" className='stack'>
+	<main>
+		<Header
+			variant="small"
+			bgColor="base"
+		>
+			<Nav />
+		</Header>
+		<Section
+			brow="CV of"
+			heading="Calvin Tyndall"
+			bgColor="light"
+			level="1"
+			className=""
+		>
+		</Section>
+
+		<div class="with-sidebar box" style="--sidebar-width: 30ch;">
+			<div class="sidebar stack">
+				<div class="sticky">
+					<Switch className="scheme-switch" />
+					<ul>
+						<li><a href="#">Introduction</a></li>
+						<li><a href="#skills">Qualifications and Skills</a></li>
+						<li><a href="#projects">Notable Projects</a></li>
+						<li><a href="#experience">Work Experience</a></li>
+						<li><a href="#education">Education</a></li>
+					</ul>
+				</div>
+			</div>
+			<div>
+				<div class="center stack">
+
+					<Card
+						variant="bordered"
+						buttonHref=""
+						buttonLabel=""
+						heading="Introduction"
+						h="h2"
+						bgImage=""
+						icon=""
+					>
+						<p>I thrive on creative problem solving. Whether optimizing workflows, crafting engaging theatre experiences, or building innovative apps, I enjoy tackling practical and creative challenges. I bring a broad skill set, spanning technology, leadership, and storytelling, making me a unique asset in any creative endeavor. My curiosity drives me to explore new ideas, connect diverse domains of knowledge and develop innovative solutions. I enjoy the early stages of projects, navigating the unknown with enthusiasm and adaptability.</p>
+					</Card>
+					<h2 id="skills">Qualifications and Skills</h2>
+					<h3>Software and Technology</h3>
+					<p>I've been coding since I was 8 years old, when I taught myself BASIC on a <a href="https://en.wikipedia.org/wiki/Timex_Sinclair_1000" target="_blank">T/S 1000</a>. Fast forward many machines and languages later and I've been building custom web solutions since 2002.</p>
+					<p>The full list of languages, frameworks, and technologies I've worked with over the years would be overwhelming, so here are the ones I've worked with most:</p>
+					<ul>
+						<li>Linux</li>
+						<li>Apache</li>
+						<li>MySQL/MariaDB</li>
+						<li>PHP (Symfony, Drupal, Custom)</li>
+						<li>HTML</li>
+						<li>CSS</li>
+						<li>Javascript (React, NextJS, Astro, Vanilla over jQuery)</li>
+					</ul>
+					<h4>What sets me apart?</h4>
+					<p>"Full Stack" developers are all the rage these days, but I'm actually an End-to-End developer. From client acquisition to delivery, I have done all the steps in between, on the business side, as well as the tech side. From sales to service, from server to the CSS. Few "full stack" developers have the insights gained from experience across the entire business and technical spectrum like I do.</p>
+
+					<h3>Leadership and Communication</h3>
+					<p>Beyond technology, I have a strong background in communication and leadership. I like to write and perform and I've been a professional entertainer and public speaker. This experience gives me the ability to communicate well with a team, a client or the general public.</p>
+					<p>In recent years, I've been working on management and business development skills. Learning the ropes on the board of a 50+ year old non-profit, and working with a small team on a consumer facing app business.</p>
+
+					<h2 id="projects">Notable Projects</h2>
+
+					<h3>Beguiler's Guild Inc.</h3>
+					<p>This was my first business. A partnership with a fellow performer. We provided our own entertainment services and the services of a small group of variety artists. It paid the bills and was a great learning experience.</p>
+
+					<h3>GoEatBC</h3>
+					<p>In 2004, this was an app business that was WAY before it's time. Today you call it UberEats or DoorDash. At the time, the mobile technology and business infrastructure weren’t ready to support the model. I mention it because it was the first time I wrote a complete content management platform from scratch which lead to making the jump from basic websites for my aforementioned entertainer friends, to web services for real businesses.</p>
+
+					<h3>MallyBibs</h3>
+					<p>MallyBibs is the project that launched Bionic. With the success of that project, word of mouth quickly spread through my client's small business network, and I was able to sustain myself and continue to improve my developer skills in the process.</p>
+
+					<h3>Weight Watchers</h3>
+					<p>This was one of the most educational and fulfilling projects of my career.</p>
+					<p>I was still what I'd consider an intermediate back end developer, hired on a 6 month contract to kickstart the project. That 6 months became more than 2 years. I learned so much from the team at Phase2 about software development, project management, client relations, and more. My hungry little mind observed and soaked up every aspect of the business I could. I can not express the gratitude I have for everyone I worked with on that project.</p>
+
+					<h3>Pokemon</h3>
+					<p>This was another big international project I was happy to work on as a senior back end dev. I got to continue flexing my finely honed dev skills after my tour with Phase2. My experience on Weight Watchers made it easy to collaborate with a whole new team.</p>
+
+					<h3>Judicial Council of California (JCC)</h3>
+					<p>I helped build out a platform that supports more than 50 superior courts for the counties of California and personally crafted workflow automation and tooling for spinning up, migrating and deploying new court sites in under an hour. The tooling also aided continuous integration, testing, and deployment of updates to the whole fleet.</p>
+					<p>I met Brad Frost in person for this project. I was encouraged to read his book "Atomic Design" at Phase2. I later returned to the JCC project to lead the development of their pattern library and front end design system for the platform.</p>
+
+					<h2 id="experience">Work Experience</h2>
+					<h3>Bionic Entrepreneur Incorporated - 2008 to Present</h3>
+					<p>I named it that because I wanted to help entrepreneurs leverage the early web for marketing and e-commerce. I assumed no one would need to type that out thanks to links but it is a bit of a mouthful. Today it sounds a little silly in my mind so we go by https://bionic.studio</p>
+					<p>After a few years of doing basic websites for entertainer friends, I decided to go pro and find some real clients. Some new friends had just launched a new business for custom baby products and their website was... not all it could be. I spent several years serving and undercharging small businesses and then decided I needed to earn some money. I helped all my clients move to new platforms and got a real job.</p>
+					<p>Bionic is still active for any freelance dev and consulting work, as well as for internal projects.</p>
+
+					<h3>ECHO Players Theatre Society - 2024 to Present</h3>
+					<p><em>Director</em></p>
+					<p>I'm currently serving my first of a 2 year term as director-at-large for this non-profit theatre society. My focus here is to help this 50 year old organization lay some new foundations for the next 50 years of success.</p>
+					<p>I'm learning the rich history of this place as I help my fellow board members employ new operational strategies and technology.</p>
+
+					<h3>Way Of BJJ Studio Inc. - 2023 to Present</h3>
+					<p><em>Director</em></p>
+					<p>Way Of BJJ Studio is a small team of creators and enthusiasts who produce unique content and an app that helps JiuJitsu players study and advance their skills.</p>
+
+					<h3>Verb Interactive - 2021 to 2022</h3>
+					<p><em>Senior Drupal Developer - Lead Developer</em></p>
+					<p>At Verb I worked on various projects, solving problems with existing codebases. Despite the Lead title, I didn't have the opportunity for more than solo development and maintenance on existing projects. I regret not making a stronger case for why they needed a different approach to project management and developer workflows. I chose to move on to freelance instead.</p>
+
+					<h3>Chapter Three LLC - 2019 to 2021</h3>
+					<p><em>Senior Developer</em></p>
+					<p>At Chapter Three I was brought on to help the Judicial Council of California (JCC) build a new platform. (See notable projects.) I stayed a few years working on this and other projects.</p>
+
+					<h3>Cheeky Monkey Media</h3>
+					<p><em>Technical Lead</em></p>
+					<ul>
+						<li>Agency Drupal Consultant</li>
+						<li>Providing technical oversight to multiple remote teams, while developing and promoting best practices.</li>
+						<li>Architecture and Technical Planning for enterprise web applications.</li>
+						<li>Developing training material for teams of in house developers.</li>
+						<li>Nurturing a developer culture of mentorship and teamwork across remote teams in several timezones.</li>
+					</ul>
+
+					<h3>Phase2</h3>
+					<p><em>Drupal Developer</em></p>
+					<p>As a contracted Drupal Developer I was brought in full-time, to help an amazing Phase2 team. After 13 localizations, lots of features, and two years of hard work on this project, I can say it was the largest and most complex thing I ever had the pleasure of contributing to at the time.</p>
+
+					<h2 id="education">Education</h2>
+					<p>I've been a self-taught developer and problem-solver since age 8 and that T/S 1000 manual, continuously learning and adapting to new challenges. I thrive in hands-on environments, mastering new skills quickly through curiosity and experience. I've taken some post-secondary courses, but I learn best by solving problems.</p>
+				</div>
+			</div>
+		</div>
+	</main>
+	<Footer />
+</Stark>
+<script is:inline src="/js/SchemeSwitch.js"></script>

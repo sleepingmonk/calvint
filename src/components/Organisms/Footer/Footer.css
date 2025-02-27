@@ -1,0 +1,33 @@
+.footer {
+  border-block-start: var(--s-2) solid var(--color-accent);
+  background-color: var(--color-dark);
+  color: var(--color-light);
+  font-size: var(--s0);
+  line-height: var(--s0);
+}
+
+.footer__logo,
+.footer__menu.cluster,
+.footer__text {
+  display: flex;
+  justify-content: center;
+}
+
+.footer__text {
+  font-size: var(--s-1);
+  text-align: center;
+}
+
+.footer__text > * {
+  --space: var(--s-2);
+}
+
+.footer ul {
+  padding-inline: 0;
+  list-style: none;
+}
+
+.footer .nav-item.active {
+  font-weight: bold;
+  color: var(--color-accent);
+}

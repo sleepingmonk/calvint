@@ -1,0 +1,7 @@
+.layout.cover {
+  --cover-padding: 0;
+}
+/* Reset for nested covers. */
+.layout.cover .cover {
+  --cover-padding: initial;
+}

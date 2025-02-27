@@ -1,0 +1,28 @@
+---
+/**
+ * variant: default
+ */
+
+import "./Switch.css";
+
+interface Props {
+  variant?: string;
+  className?: string;
+}
+
+const { variant = "default", className } = Astro.props;
+const variant_type = `switch--${variant}`;
+const classes = `switch ${variant_type} ${className}`;
+---
+
+<div class="switch__wrapper">
+  <slot name="prefix" />
+  <div class={classes}>
+    <div class="switch__inner">
+      <div class="switch__toggler"></div>
+    </div>
+  </div>
+  <slot name="suffix" />
+</div>
+
+<script src="./Switch.js"/>

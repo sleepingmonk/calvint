@@ -1,0 +1,19 @@
+---
+import BlogLink from "../../Atoms/BlogLink/BlogLink.astro";
+
+import './BlogLinks.css';
+
+const { posts = [] } = Astro.props;
+---
+<ul class="blog-links stack">
+  {posts.map((
+    post: {
+      id: any;
+      data: {
+        title: '';
+      }
+    }
+  ) => (
+    <BlogLink {post} />
+  ))}
+</ul>

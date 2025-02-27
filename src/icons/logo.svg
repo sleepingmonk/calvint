@@ -1,0 +1,13 @@
+<svg stroke-miterlimit="10" style="fill-rule:nonzero;clip-rule:evenodd;stroke-linecap:round;stroke-linejoin:round;" version="1.1" viewBox="0 0 782 1024" xml:space="preserve" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+<defs/>
+<clipPath id="ArtboardFrame">
+<rect height="1024" width="782" x="0" y="0"/>
+</clipPath>
+<g clip-path="url(#ArtboardFrame)" id="Layer-3">
+<g opacity="1">
+<path d="M82.1977 629.984L82.1977 50L569.384 50L685.381 212.395L499.786 444.389L731.779 676.382L731.779 838.778L615.783 977.974L151.796 977.974L151.796 792.379L522.985 792.379L522.985 722.781L406.989 606.784L244.593 606.784L244.593 444.389L430.188 235.595" fill="none" opacity="1" stroke="currentColor" stroke-linecap="butt" stroke-linejoin="round" stroke-width="100"/>
+<path d="M1 631.144C1 586.299 37.3535 549.946 82.1977 549.946C127.042 549.946 163.395 586.299 163.395 631.144C163.395 653.277 154.54 673.342 140.178 687.988C125.442 703.017 104.909 712.341 82.1977 712.341C37.3535 712.341 1 675.988 1 631.144Z" fill="currentColor" fill-rule="nonzero" opacity="1" stroke="none"/>
+<path d="M348.99 236.755C348.99 191.91 385.344 155.557 430.188 155.557C475.032 155.557 511.386 191.91 511.386 236.755C511.386 281.599 475.032 317.952 430.188 317.952C385.344 317.952 348.99 281.599 348.99 236.755Z" fill="currentColor" fill-rule="nonzero" opacity="1" stroke="none"/>
+</g>
+</g>
+</svg>

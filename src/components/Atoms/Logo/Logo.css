@@ -1,0 +1,14 @@
+.logo {
+  height: var(--height);
+  width: var(--height);
+  border-radius: var(--height);
+  border: 2px solid var(--color-light);
+  overflow: hidden;
+}
+
+.logo__logo img {
+  display: block;
+  height: var(--height);
+
+  width: auto;
+}

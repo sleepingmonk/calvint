@@ -1,0 +1,56 @@
+---
+interface Frontmatter {
+	title: string;
+	pubDate?: string;
+	scheme?: string;
+	tag?: string;
+}
+
+interface Props {
+	frontmatter?: Frontmatter;
+}
+
+import Footer from "../components/Organisms/Footer/Footer.astro";
+import Header from "../components/Organisms/Header/Header.astro";
+import Nav from "../components/Molecules/Nav/Nav.astro";
+
+import '../styles/elements.css';
+import '../styles/layout-primitives.css';
+import '../styles/scheme-default.css';
+import './Blog.css';
+
+const { frontmatter = { title: "Hello, nurse!", pubDate: null, tag: '...'} } = Astro.props;
+---
+
+<!doctype html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="description" content="A man of many talents - Calvin is a highly creative autodidact that is equal parts technical and artistic. From programming to performing and many things in between, his experience and insights are a unique and valuable asset to any project." />
+		<meta name="viewport" content="width=device-width" />
+		<link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+		<title>{frontmatter.title}</title>
+	</head>
+	<div class=`blog cover scheme-${frontmatter.scheme}`>
+		<Header
+			variant="small"
+			bgColor="base"
+		>
+			<Nav />
+		</Header>
+		<div class="principal box">
+			<div class="container">
+				<div class="stack">
+					<div class="blog__heading stack">
+						<h1>{ frontmatter.title }</h1>
+						<div class="blog-date">{ frontmatter.pubDate } | The art of { frontmatter.tag }</div>
+					</div>
+					<div class="blog__content center stack">
+						<slot />
+					</div>
+				</div>
+			</div>
+		</div>
+		<Footer />
+	</div>
+</html>

@@ -1,0 +1,27 @@
+---
+import Section from "../../Organisms/Section/Section.astro";
+import Card from "../../Molecules/Card/Card.astro";
+
+interface Props {
+}
+---
+
+<Section
+  justify="center"
+  align="center"
+  brow=""
+  heading="Join the Family"
+  bgColor="base"
+  >
+  <Card
+    variant="bordered-center center"
+    heading="Telling Stories Requires a Community"
+  >
+    <div class="stack">
+      <div>
+        <p>We NEVER share your info. Easily unsubscribe at any time.</p>
+      </div>
+    </div>
+    <script is:inline type="text/javascript" src="https://js.createsend1.com/javascript/copypastesubscribeformlogic.js" />
+  </Card>
+</Section>

@@ -1,0 +1,10 @@
+---
+const { post } = Astro.props;
+---
+
+<li key={post.id}>
+  <span class="tag">#{post.data.tag}</span>
+  <a href={`/blog/${post.id}`} title={post.data.description}>
+   <span>{post.data.title}</span>
+  </a>
+</li>

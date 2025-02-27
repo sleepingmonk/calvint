@@ -1,0 +1,29 @@
+---
+/**
+ * variant: default
+ */
+
+ import "./Flip.css";
+ import "./Flip.js";
+
+interface Props {
+  variant?: string;
+  flip1?: string;
+  flip2?: string;
+  flip3?: string;
+}
+
+const { variant = "default", flip1 = 'technical', flip2 = "LY", flip3 = 'creative'} = Astro.props;
+const variant_type = `flip--${variant}`;
+const classes = `flip ${variant_type}`;
+---
+<div class={classes}>
+  <div class="flip__container">
+    <div class="flip__1">{flip1}</div>
+    <div class="flip__2">{flip2}</div>
+    <div class="flip__3">{flip3}</div>
+  </div>
+  <slot />
+</div>
+
+<script is:inline src="/js/SchemeSwitch.js"></script>

@@ -1,0 +1,33 @@
+---
+interface Props {
+  bgImage?: string;
+  bgColor?: string;
+  className?: string;
+}
+
+import './Cover.css';
+
+const {
+  bgImage,
+  bgColor = "default",
+  className
+} = Astro.props;
+
+const classes = [
+  'section section--cover',
+  `section--color-${bgColor}`,
+  `${className ? className : ""}`,
+];
+---
+
+<div class={classes.join(' ')}>
+  {bgImage ? (
+    <div class="section__image" style={`--background-image: url(${bgImage});`}></div>
+    <div class="section__tint"></div>
+  ) : null}
+  <div class="section__content cover">
+    <slot name="top" />
+    <slot name="principal" />
+    <slot name="bottom" />
+  </div>
+</div>

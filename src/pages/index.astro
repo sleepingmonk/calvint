@@ -1,11 +1,102 @@
 ---
-import Welcome from '../components/Welcome.astro';
-import Layout from '../layouts/Layout.astro';
+import { getCollection } from 'astro:content';
+import BlogLinks from '../components/Molecules/BlogLinks/BlogLinks.astro';
+import Card from '../components/Molecules/Card/Card.astro';
+import Cover from '../components/Organisms/Cover/Cover.astro';
+import Flip from '../components/Atoms/Flip/Flip.astro';
+import Footer from '../components/Organisms/Footer/Footer.astro';
+import Header from '../components/Organisms/Header/Header.astro';
+import Nav from '../components/Molecules/Nav/Nav.astro';
+import Section from '../components/Organisms/Section/Section.astro';
+import Stark from '../layouts/Stark.astro';
+import Switch from '../components/Atoms/Switch/Switch.astro';
 
-// Welcome to Astro! Wondering what to do next? Check out the Astro documentation at https://docs.astro.build
-// Don't want to use any of this? Delete everything in this file, the `assets`, `components`, and `layouts` directories, and start fresh.
+import './index.css';
+
+// Get tech posts.
+const techPosts = (await getCollection('blog', ({ data }) => {
+	return data.scheme == 'tech';
+})).sort((a, b) => a.data.pubDate.valueOf() - b.data.pubDate.valueOf());
+
+const techSet = techPosts.reverse().slice(0, 5);
+
+// Get art posts.
+const artPosts = (await getCollection('blog', ({ data }) => {
+	return data.scheme == 'art';
+})).sort((a, b) => a.data.pubDate.valueOf() - b.data.pubDate.valueOf());
+
+const artSet = artPosts.reverse().slice(0, 5);
 ---
 
-<Layout>
-	<Welcome />
-</Layout>
+<Stark title="About Calvin">
+	<main class="">
+		<Cover
+			bgColor="base"
+			className="halftone"
+		>
+			<div slot="top" class="stack">
+				<Header
+					variant="overlay"
+					bgColor=""
+				>
+					<Nav />
+				</Header>
+				<Flip
+					variant="default"
+					flip1="technical"
+					flip2="ly"
+					flip3="creative"
+				>
+					<Switch
+						className="scheme-switch"
+					>
+						<div slot="prefix">&#x1F4BB;</div>
+						<div slot="suffix">&#x1F3AD;</div>
+					</Switch>
+				</Flip>
+			</div>
+			<div slot="principal" class="principal">
+				<div class="center stack tech-only" style="text-align: center;">
+					<p>A visionary problem-solver blending technical expertise with creative artistry, Calvin bridges the worlds of technology and storytelling to drive innovation, collaboration, and growth.</p>
+				</div>
+				<div class="center stack art-only" style="text-align: center;">
+					<p>I walk between two worlds, seen and unseen.<br />
+						Blissful chaotic wandering in side a waking dream.</p>
+				</div>
+			</div>
+			<div slot="bottom" class="box" style="text-align: center; padding-block: var(--s-3)">
+				<p>&DownArrow;</p>
+			</div>
+		</Cover>
+		<Section
+			brow=""
+			heading="Ramblings"
+			bgColor="light"
+			level="2"
+			className=""
+		>
+			<div class="center">
+				<p>With the relaunch of this site, I'm reviewing the old blog and various writings of the past to repost here. I'll also be posting new content as regularly as I can manage. Thanks for looking around.</p>
+			</div>
+			<div class="switcher" style="--measure: 50ch;">
+				<Card
+					variant="bordered-center"
+					heading="Tech Blog"
+					buttonHref='/blog/tech'
+					buttonLabel='more'
+				>
+					<BlogLinks posts={techSet} />
+				</Card>
+				<Card
+					variant="bordered-center"
+					heading="Art Blog"
+					buttonHref='/blog/art'
+					buttonLabel='more'
+				>
+					<BlogLinks posts={artSet} />
+				</Card>
+			</div>
+		</Section>
+	</main>
+	<Footer />
+</Stark>

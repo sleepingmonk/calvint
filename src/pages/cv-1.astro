@@ -1,0 +1,153 @@
+---
+import Card from '../components/Molecules/Card/Card.astro';
+import Footer from '../components/Organisms/Footer/Footer.astro';
+import Header from '../components/Organisms/Header/Header.astro';
+import Nav from '../components/Molecules/Nav/Nav.astro';
+import Section from '../components/Organisms/Section/Section.astro';
+import Stark from '../layouts/Stark.astro';
+import Switch from '../components/Atoms/Switch/Switch.astro';
+
+---
+
+<Stark title="About Calvin" className='stack'>
+	<main>
+		<Header
+			variant="small"
+			bgColor="base"
+		>
+			<Nav />
+		</Header>
+		<Section
+			brow="CV of"
+			heading="Calvin Tyndall"
+			bgColor="light"
+			level="1"
+			className=""
+		>
+		</Section>
+
+		<div class="with-sidebar box" style="--sidebar-width: 30ch;">
+			<div class="sidebar stack">
+				<div class="sticky">
+					<Switch className="scheme-switch" />
+					<ul>
+						<li><a href="#">Introduction</a></li>
+						<li><a href="#skills">Qualifications and Skills</a></li>
+						<li><a href="#projects">Notable Projects</a></li>
+						<li><a href="#experience">Work Experience</a></li>
+						<li><a href="#education">Education</a></li>
+					</ul>
+				</div>
+			</div>
+			<div>
+				<div class="center stack">
+
+					<Card
+						variant="bordered"
+						buttonHref=""
+						buttonLabel=""
+						heading="Introduction"
+						h="h2"
+						bgImage=""
+						icon=""
+					>
+						<p>If there's one label I could apply to myself after several decades of life, it's "problem-solver". To expand on that a bit, it would be "creative problem-solver". This is what I do to serve others.</p>
+						<p>I <em>can</em> apply tried and true solutions to known problems. In cases like these I try to optimize for efficiency and long term durability. A simple example; Do you have a problem with your developer workflow (I bet you do), no problem, I can help improve the efficiency and effectiveness of the team.</p>
+						<p>Where I'm happiest as a problem solver is when I get to create solutions to new problems. How do we convince an audience that Matilda is moving objects with her mind on stage? How do we build an app that can accelerate the skill development of JiuJitsu players? How do we communicate to your target audience?</p>
+						<p>You see, extra examples for creative problem-solving because it's so fun!</p>
+						<p>Combining the practical with the creative allows me to look at the big picture and the long term and make better choices about what to do right now.</p>
+						<p>As someone very high on the Openness dimension of the Big 5, I'm curious about many things. I love new ideas, different fields of interest, and diverse experiences. This gives me a deep reservoir of experience and knowledge from which to synthesize ideas and solutions to things. It makes me well suited to project work, particulary the start up phases of new projects. I enjoy the unknown and the opportunity to get to know new teams and new problems.</p>
+					</Card>
+					<h2 id="skills">Qualifications and Skills</h2>
+					<h3>Software and Technology</h3>
+					<p>I've been coding since I was 8 years old, when I taught myself BASIC on a <a href="https://en.wikipedia.org/wiki/Timex_Sinclair_1000" target="_blank">T/S 1000</a>. Fast forward many machines and languages later and I've been building custom web solutions since 2002.</p>
+					<p>I've written useful code in over a dozen languages but the bulk of my professional dev work has been with the following and related frameworks:</p>
+					<ul>
+						<li>Linux</li>
+						<li>Apache</li>
+						<li>MySQL/MariaDB</li>
+						<li>PHP (Symfony, Drupal, Custom)</li>
+						<li>HTML</li>
+						<li>CSS</li>
+						<li>JS (React, NextJS, Astro, Vanilla over jQuery)</li>
+					</ul>
+					<p>People like to talk about "Full Stack" developers these days, but I'm actually an end-to-end developer. From client acquisition to delivery, I have done all the steps in between, on the business side, as well as the tech side. From sales to service, from server to the CSS. How many "full stack" React developers can claim that?</p>
+
+					<h3>Leadership and Communication</h3>
+					<p>Alright, enough with the nerdy stuff. I also like to write and perform and I've been a professional entertainer and public speaker. This experience gives me the ability to communicate well with a team, a client or the general public.</p>
+					<p>In recent years, I've been working on management and business development skills. Learning the ropes on the board of a 50+ year old non-profit, and working with a small team on a consumer facing app business.</p>
+
+					<h2 id="projects">Notable Projects</h2>
+
+					<h3>Beguiler's Guild Inc.</h3>
+					<p>This was my first business. A partnership with fellow performer. We provided our own entertainment services and the services of a small group of variety artists. It paid the bills and was great learning experience.</p>
+
+					<h3>GoEatBC</h3>
+					<p>In 2004, this was an app business that was WAY before it's time. Today you call it UberEats or DoorDash. This was a failed venture because the necessary mobile technology and business acumen to make it work were severly lacking.  I mention it because it was the first time I wrote complete content management platfrom from scratch which lead to making the jump from basic websites for my afforementioned entertainer friends, to web services for real businesses.</p>
+
+					<h3>MallyBibs</h3>
+					<p>MallyBibs is the project that launched Bionic. With the success of that project, word of mouth quickly spread through my client's small business network, and I was able to sustain myself and continue to improve my developer skills in the process.</p>
+
+					<h3>WeightWatchers</h3>
+					<p>This project was, by far, the single most educational and fullfilling project I've had the pleasre to work on as a developer.</p>
+					<p>I was still what I'd consider an intermediate back end developer, hired on a 6 month contract to kickstart the project. That 6 months became more than 2 years. I learned so much from the team at Phase2 about software development, project management, client relations, and more. My hungry little mind observed and soaked up every aspect of the business I could. I can not express the gratitude I have for my mentors and everyone I worked with on that project. It transformed me from a curious solo devloper, to structured and disciplined multifaceted powerhouse of a team player by comparison.</p>
+
+					<h3>Pokemon</h3>
+					<p>This was another big international project I was happy to work on as a senior back end dev. Not much to say about it, other than I got to continue flexing my finely honed dev skills after my tour with Phase2.</p>
+
+					<h3>Judicial Council of California (JCC)</h3>
+					<p>Another big team effort. I helped build out a platform that supports more than 50 superior courts for the counties of California and personally crafted workflow automation and tooling for the spinning up and deployment of new court sites and the continuous integration, testing, and deployment of updates to the whole fleet.</p>
+					<p>I met Brad Frost in person for this project. I was encouraged to read his book Atomic Habits at Phase2. I later returned to the JCC project to lead the development of their pattern library and front end design system for the platform.</p>
+
+					<h3>ECHO Players</h3>
+					<p>Home sweet home? I nearly went to theatre school but was put on a wait list, then was accepted into a computer science program while I waited. I'll never know where that fork in the road may have lead, but I do know that getting involed in community theatre 20 years later has checked several boxes on the fulfilling life list.</p>
+					<p>Here, I act, sing, tech, build, fix, plan, collaborate creatively and thoroughly enjoy. As a member of the board I'm learning new skills and helping this organization find its way into the future.</p>
+
+					<h2 id="experience">Work Experience</h2>
+					<h3>Bionic Entrepreneur Incorporated - 2008 to Present</h3>
+					<p>That's a mouthful. I named it that because I wanted to help entrepreneurs leverage the early web for marketing and e-commerce, and I figured, no one would need to type that out because of links. Today it sounds a little silly in my mind so we go by https://bionic.studio</p>
+					<p>After a few years of doing basic websites for entertainer firends, I decided to go pro and find some real clients. Some new friends had just launched a new busiess for custom baby products and their website was... not all it could be. I spent several years serving and undercharging small businesses and then decided I needed to earn some money. I helped all my current clients move to new platforms and got a real job.</p>
+					<p>Bionic is still active for any frelance dev and consulting work, as well as for internal projects.</p>
+
+					<h3>ECHO Players Theatre Society - 2024 to Present</h3>
+					<p><em>Director</em></p>
+					<p>I am an active in the directon of this non-profit community theatre society. I'm currently serving my first of a 2 year term. My focus here is to help this 50 year old organization lay some new foundations for the next 50 years of success.</p>
+					<p>I'm learning the rich history of this place as I help my fellow board members employ new strategies and technology to attracting and developing new volunteers and talent.</p>
+
+					<h3>Way Of BJJ Studio Inc. - 2023 to Present</h3>
+					<p><em>Director</em></p>
+					<p>Way Of BJJ Studio is a small team of creators and enthusiasts who create unique content and an app that helps JiuJitsu players study and advance their skills.</p>
+
+					<h3>Verb Interactive - 2021 to 2022</h3>
+					<p><em>Senior Drupal Developer - Lead Developer</em></p>
+					<p>At Verb I worked on various projects, solving problems with existing codebases. Despite the Lead title, I didn't have opportunity for more than solo development and maintenance on existing projects. I regret not making a stronger case for why they needed a different approach to project management and developer workflows. I chose to move on to freelance instead.</p>
+
+					<h3>Chapter Three LLC - 2019 to 2021</h3>
+					<p><em>Senior Developer</em></p>
+					<p>At Chapter Three I was brought on to help the Judicial Council of California (JCC) build a new platform. I helped build out a back end platform that supports more than 50 court websites for the counties of California and personally crafted workflow automation and tooling for the spinning up and deployment of new court sites and the continuous integration testing and deployment of updates to the whole fleet.</p>
+					<p>I later returned to the JCC project to lead the development of their pattern library and front end design system for the platform.</p>
+
+					<h3>Cheeky Monkey Media</h3>
+					<p><em>Technical Lead</em></p>
+					<ul>
+						<li>Agency Drupal Consultant</li>
+						<li>Providing technical oversight to multiple remote teams, while developing and promoting best practices.</li>
+						<li>Architecture and Technical Planning for enterprise web applications.</li>
+						<li>Developing training material for teams of in house developers.</li>
+						<li>Nurturing a developer culture of mentorship and teamwork across remote teams in several timezones.</li>
+					</ul>
+
+					<h3>Phase2</h3>
+					<p><em>Drupal Developer</em></p>
+					<p>As a contracted Drupal Developer I was brought in full-time, to help an amazing Phase2 team. After 13 localizations, lots of features, and two years of hard work on this project, I can say it was the largest and most complex thing I ever had the pleasure of contributing to at the time.</p>
+					<p>Most importantly, I met and learned from the very talented team at Phase2.</p>
+
+					<h2 id="education">Education</h2>
+					<p>I'm not going to sugar coat it. I was a terrible student in a classroom environment. Labs and theatres on the other hand were great! It could have been the home life, it could have been that school was too slow for me, it could have been both. I took some post secondary classes but I don't have a degree. I've been self taught sice that T/S 1000 manual at 8 years old and I've never stopped. I study what I'm interested in and learn what makes me able to do the things I want to do. If I need to know something, I'll learn it somewhere or figure it out pretty fast.</p>
+				</div>
+			</div>
+		</div>
+	</main>
+	<Footer />
+</Stark>
+<script is:inline src="/js/SchemeSwitch.js"></script>

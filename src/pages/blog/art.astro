@@ -1,0 +1,29 @@
+---
+import BlogLinks from '../../components/Molecules/BlogLinks/BlogLinks.astro';
+import Layout from '../../layouts/Layout.astro';
+import Section from '../../components/Organisms/Section/Section.astro';
+import { getCollection } from 'astro:content';
+import "../../layouts/Blog.css";
+
+const posts = await getCollection('blog', ({ data }) => {
+  return data.scheme == 'art';
+});
+---
+
+<Layout
+  title="Art Blog"
+  className='scheme-art cover'
+>
+  <Section
+    brow='blog'
+    heading="Art"
+    bgColor="light"
+    level="1"
+    className='principal'
+  >
+    <div class="center stack">
+      <p>With the relaunch of this site, I'm reviewing the old blog and various writings of the past to repost here. I'll also be posting new content as regularly as I can manage. Thanks for lookin' around.</p>
+      <BlogLinks posts={ posts } />
+    </div>
+  </Section>
+</Layout>

@@ -1,0 +1,29 @@
+---
+import "./Footer.css";
+import Logo from '../../Atoms/Logo/Logo.astro';
+import SectionJoinForm from "../SectionJoinForm/SectionJoinForm.astro"
+import NavItemsMain from "../../Molecules/NavItemsMain/NavItemsMain.astro";
+
+interface Props {
+  variant?: string;
+  measure?: string;
+  form?: string;
+}
+
+const { variant = "default", measure = "50ch", form = "" } = Astro.props;
+const classes = `footer footer--${variant} box stack`;
+---
+
+{form === "join" ? <SectionJoinForm /> : null}
+
+<div class={classes}>
+  <div class="footer__logo"><Logo /></div>
+  <ul class="footer__menu cluster">
+    <NavItemsMain />
+  </ul>
+  <div class="footer__text stack">
+    <p>All words, images and media are the property of Calvin Tyndall, unless otherwise noted.</p>
+    <p>&copy; 2023 - {new Date().getFullYear()} Calvin Tyndall, All rights reserved.</p>
+    <p>Stock images provided by <a href="https://unsplash.com/photos/narrow-pathway-near-tress-1vzLW-ihJaM?utm_content=creditCopyText&utm_medium=referral&utm_source=unsplash">Unsplash</a></p>
+  </div>
+</div>

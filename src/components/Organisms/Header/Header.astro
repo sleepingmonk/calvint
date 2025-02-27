@@ -1,0 +1,32 @@
+---
+import "./Header.css";
+import Logo from '../../Atoms/Logo/Logo.astro';
+
+interface Props {
+  variant?: string;
+  measure?: string;
+  logoHeight?: string;
+  bgColor?: string;
+  slot?: string;
+  className?: string;
+}
+
+const { variant = "default", measure = "30ch", logoHeight, bgColor = '', slot = '', className } = Astro.props;
+const classes = [
+  'header',
+  `header--${variant}`,
+  `${bgColor.length ? "header--" + bgColor : ""}`,
+  `${variant == "overlay" || variant == "overlay-small" ? "" : "box"}`,
+  `${className}`
+];
+const adjustedLogoHeight = variant == "small" || variant == "overlay-small" ? "s2" : logoHeight;
+---
+
+<div slot={slot} class={classes.join(' ')}>
+  <div class="with-sidebar" style="--sidebar-width: var(--height, var(--s4));">
+    <div>
+      <a href="/"><Logo height={adjustedLogoHeight} /></a>
+    </div>
+    <slot />
+  </div>
+</div>

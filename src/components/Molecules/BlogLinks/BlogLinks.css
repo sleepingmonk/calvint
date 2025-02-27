@@ -1,0 +1,25 @@
+.blog-links {
+  padding: 0;
+  text-align: left;
+}
+
+.blog-links li {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 1ch;
+}
+
+.blog-links .tag {
+  border: 1px solid var(--color-shadow);
+  border-radius: var(--s-3);
+  background: var(--color-accent);
+  padding: var(--s-5) var(--s-1);
+  font-size: var(--s0);
+  line-height: var(--s0);
+}
+
+.blog-links a {
+  text-decoration: none;
+  line-height: 1.5rem;
+}
