@@ -15,7 +15,7 @@ It was late July 1999 and a small troupe of ne'er-do-wells were following the ca
 
 Looking back, I have no idea how any of us survived, but something always came along.  Well, some of us didn't survive.  Some of us got real, actual jobs! ICK! But that's a sad story for another time.
 
-We spent the last summer that Calgary was a kind of cool, busking at Prince's Island Park, behind the Hard Rock Cafe. - Calgary had a Hard Rock once! Then it was a daycare, then they knocked it down. - When the Stampede came we moved to 8th Ave and Olympic Plaza to be closer to the tourists and the action. We performed magic, juggling, thrilling escapes - but the thing that was sure to capture hearts and dollars was balloon sculpting.
+We spent the last summer that Calgary was kind of cool, busking at Prince's Island Park, behind the Hard Rock Cafe. - Calgary had a Hard Rock once! Then it was a daycare, then they knocked it down. - When the Stampede came we moved to 8th Ave and Olympic Plaza to be closer to the tourists and the action. We performed magic, juggling, thrilling escapes - but the thing that was sure to capture hearts and dollars was balloon sculpting.
 
 I'm not talking about lame wiener dogs here, I mean lions, and tigers, and bears, oh my!  Monkeys climbing trees to fetch a coconut, or how about a teddy bear juggling three balls while riding a unicycle! I suggested one of us dress up and <u>be</u> a teddy bear, twisting a teddy bear juggling three balls while riding a unicycle, while riding a unicycle.  Our unicycle was stolen before anyone got good enough to pull it off.
 
