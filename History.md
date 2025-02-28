@@ -1,4 +1,11 @@
 
+0.0.2 / 2025-02-28
+==================
+
+  * Update to astro sample github pages workflow.
+
+  1 file changed, 83 insertions(+), 27 deletions(-)
+
 0.0.1 / 2025-02-28
 ==================
 
