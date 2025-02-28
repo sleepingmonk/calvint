@@ -1,48 +1,25 @@
-# Astro Starter Kit: Basics
+# Calvin's Personal Blog
 
-```sh
-npm create astro@latest -- --template basics
-```
+Welcome to my personal blog, hosted on GitHub Pages. Here, I share thoughts, insights, and projects related to my work and creative interests.
 
-[![Open in StackBlitz](https://developer.stackblitz.com/img/open_in_stackblitz.svg)](https://stackblitz.com/github/withastro/astro/tree/latest/examples/basics)
-[![Open with CodeSandbox](https://assets.codesandbox.io/github/button-edit-lime.svg)](https://codesandbox.io/p/sandbox/github/withastro/astro/tree/latest/examples/basics)
-[![Open in GitHub Codespaces](https://github.com/codespaces/badge.svg)](https://codespaces.new/withastro/astro?devcontainer_path=.devcontainer/basics/devcontainer.json)
+https://calvint.com
 
-> 🧑‍🚀 **Seasoned astronaut?** Delete this file. Have fun!
+## About
 
-![just-the-basics](https://github.com/withastro/astro/assets/2244813/a0a5533c-a856-4198-8470-2d67b1d7c554)
+This repository contains the source code and content for my personal blog, built with [Astro](https://astro.build). It is hosted for free using GitHub Pages.
 
-## 🚀 Project Structure
+## License
 
-Inside of your Astro project, you'll see the following folders and files:
+**All written content, images, and media files** contained within this repository (unless otherwise noted) are **copyright © Calvin Tyndall**. Unauthorized reproduction, distribution, or modification of this content is not permitted without explicit permission.
 
-```text
-/
-├── public/
-│   └── favicon.svg
-├── src/
-│   ├── layouts/
-│   │   └── Layout.astro
-│   └── pages/
-│       └── index.astro
-└── package.json
-```
+If you'd like to reference or share any of my work, please provide proper credit and link back to this repository or my website.
 
-To learn more about the folder structure of an Astro project, refer to [our guide on project structure](https://docs.astro.build/en/basics/project-structure/).
+The source code in this repository is provided under the [MIT License](https://github.com/withastro/astro/blob/main/LICENSE) unless otherwise specified.
 
-## 🧞 Commands
+## Contributions
 
-All commands are run from the root of the project, from a terminal:
+This is a personal project, so I am not accepting contributions at this time. However, feedback and discussions are welcome.
 
-| Command                   | Action                                           |
-| :------------------------ | :----------------------------------------------- |
-| `npm install`             | Installs dependencies                            |
-| `npm run dev`             | Starts local dev server at `localhost:4321`      |
-| `npm run build`           | Build your production site to `./dist/`          |
-| `npm run preview`         | Preview your build locally, before deploying     |
-| `npm run astro ...`       | Run CLI commands like `astro add`, `astro check` |
-| `npm run astro -- --help` | Get help using the Astro CLI                     |
+## Contact
 
-## 👀 Want to learn more?
-
-Feel free to check [our documentation](https://docs.astro.build) or jump into our [Discord server](https://astro.build/chat).
+If you have any questions or would like to request permission to use content from this blog, feel free to reach out via blog[at]bionic.studio.
