@@ -1,4 +1,11 @@
 
+0.1.1 / 2025-05-23
+==================
+
+  * fix: Improve .proof.section specificity.
+
+  1 file changed, 7 insertions(+), 7 deletions(-)
+
 0.1.0 / 2025-05-23
 ==================
 
