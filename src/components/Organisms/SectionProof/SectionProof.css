@@ -1,10 +1,10 @@
-.proof .section__content {
+.proof.section .section__content {
   text-shadow: none;
   inline-size: 100%;
   max-inline-size: 100vw;
 }
 
-.proof .reel {
+.proof.section .reel {
   inline-size: var(--measure);
   max-inline-size: 100%;
   margin-inline: auto;
@@ -20,17 +20,17 @@
   block-size: var(--s-3);
 }
 
-.proof .reel::-webkit-scrollbar-track {
+.proof.section .reel::-webkit-scrollbar-track {
   background-color: var(--color-dark);
 }
 
-.proof .reel::-webkit-scrollbar-thumb {
+.proof.section .reel::-webkit-scrollbar-thumb {
   background-color: var(--color-accent);
-  background-image: linear-gradient(var(--color-accent) 0, var(--color-accent) 0.25rem, var(--color-light) 0.25rem, var(--color-light) 0.75rem, var(--color-accent) 0.75rem);
+  background-image: linear-gradient(var(--color-accent) 0, var(--color-accent) 0.25rem, var(--color-dark) 0.25rem, var(--color-dark) 0.75rem, var(--color-accent) 0.75rem);
 }
 
 
-.proof .item {
+.proof.section .item {
   inline-size: 100%;
   max-inline-size: 100vw;
   scroll-snap-align: start;
@@ -39,7 +39,7 @@
   justify-content: center;
 }
 
-.proof cite {
+.proof.section cite {
   font-size: var(--s0);
   font-style: italic;
   text-align: center;
