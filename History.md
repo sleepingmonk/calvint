@@ -1,4 +1,11 @@
 
+0.1.2 / 2025-05-23
+==================
+
+  * fix: Card: overlay alignment. Portfolio link on homepage.
+
+  2 files changed, 11 insertions(+), 1 deletion(-)
+
 0.1.1 / 2025-05-23
 ==================
 
