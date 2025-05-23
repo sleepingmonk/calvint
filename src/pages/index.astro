@@ -10,6 +10,7 @@ import Nav from '../components/Molecules/Nav/Nav.astro';
 import Section from '../components/Organisms/Section/Section.astro';
 import Stark from '../layouts/Stark.astro';
 import Switch from '../components/Atoms/Switch/Switch.astro';
+import Button from '../components/Atoms/Button/Button.astro';
 
 import './index.css';
 
@@ -75,7 +76,15 @@ const artSet = artPosts.reverse().slice(0, 5);
 			level="2"
 			className=""
 		>
-			<div class="center">
+			<div class="center stack">
+				<div style="text-align: center;">
+					<Button
+						label="Portfolio"
+						href="/portfolio"
+						type="text"
+						size="small"
+					/>
+				</div>
 				<p>With the relaunch of this site, I'm reviewing the old blog and various writings of the past to repost here. I'll also be posting new content as regularly as I can manage. Thanks for looking around.</p>
 			</div>
 			<div class="switcher" style="--measure: 50ch;">

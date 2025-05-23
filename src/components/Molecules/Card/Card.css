@@ -139,6 +139,7 @@
 
 .card--overlay .card__main {
   gap: var(--s0);
+  inline-size: 100%;
 }
 
 .card--overlay .card__content {
