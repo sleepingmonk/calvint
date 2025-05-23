@@ -61,9 +61,11 @@ const classes = [
         ) : null}
       </div>
     ) : null}
-    <div class="section__main stack">
-      <slot />
-    </div>
+    {Astro.slots.has('default') ? (
+      <div class="section__main stack">
+        <slot />
+      </div>
+    ) : null}
     {buttonHref ? (
       <div class="section__button center">
         <Button

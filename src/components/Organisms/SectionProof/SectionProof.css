@@ -9,7 +9,7 @@
   max-inline-size: 100%;
   margin-inline: auto;
   color: var(--color-light);
-  background: none; /*var(--color-dark);*/
+  background: none;
   scroll-behavior: smooth;
   scroll-snap-type: x mandatory;
   scrollbar-color: var(--color-accent) var(--color-dark);

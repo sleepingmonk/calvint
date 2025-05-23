@@ -1,7 +1,13 @@
 ---
----
-import Section from '../Section/Section.astro';
+import Section from '../../Organisms/Section/Section.astro';
 import './SectionProof.css';
+
+interface Props {
+  className?: string;
+}
+
+const { className } = Astro.props;
+---
 
 <Section
   justify="center"
@@ -9,7 +15,7 @@ import './SectionProof.css';
   brow=""
   heading=""
   bgColor="dark"
-  className="proof"
+  className=`${className ? className : ""} proof`
 >
   <div class='reel'>
     <div class='item'>

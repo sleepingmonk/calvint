@@ -1,0 +1,42 @@
+---
+import { getCollection } from 'astro:content';
+import "./PortfolioPager.css";
+
+interface Props {
+  variant?: string;
+  current?: string;
+}
+
+const { variant = "tech", current = null } = Astro.props;
+
+const itemCollection = (await getCollection('portfolio', ({ data }) => {
+	return data.scheme == variant && data.pubDate && data.pubDate <= new Date();
+})).sort((a, b) => a.data.pubDate.valueOf() - b.data.pubDate.valueOf());
+
+const currentItem = itemCollection.find((item) => item.id === current);
+const nextItem = itemCollection[itemCollection.indexOf(currentItem) - 1];
+const previousItem = itemCollection[itemCollection.indexOf(currentItem) + 1];
+
+---
+<div class="pager box">
+  <!-- <div class="center"> -->
+    <div class="switcher" style="align-items: center; justify-content: center;">
+      {previousItem ? (
+        <div class="pager__previous">
+          <a href={`/portfolio/${previousItem.id}`} class="pager__link pager__link--prev">
+            <span class="pager__label">&larr;</span>
+            <span class="pager__title">{previousItem.data.title}</span>
+          </a>
+        </div>
+      ) : <div></div> }
+      {nextItem ? (
+        <div class="pager__next">
+          <a href={`/portfolio/${nextItem.id}`} class="pager__link pager__link--next">
+            <span class="pager__title">{nextItem.data.title}</span>
+            <span class="pager__label">&rarr;</span>
+          </a>
+        </div>
+      ) : <div></div> }
+    </div>
+  <!-- </div> -->
+</div>

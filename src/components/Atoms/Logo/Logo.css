@@ -7,8 +7,7 @@
 }
 
 .logo__logo img {
-  display: block;
+  /* display: block; */
   height: var(--height);
-
   width: auto;
 }

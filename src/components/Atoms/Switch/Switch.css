@@ -1,6 +1,6 @@
 .switch__wrapper {
   display: flex;
-  justify-content: space-between;
+  justify-content: center;
   gap: var(--s-1);
   align-items: center;
   block-size: var(--switch-height, var(--s0));

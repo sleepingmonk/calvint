@@ -16,7 +16,6 @@ h1, h2, h3, h4, h5 {
   --line-height: 1.3em;
   margin: 0;
   font-family: var(--font-secondary);
-  font-weight: 400;
   color: var(--heading-color, inherit);
   hyphens: auto;
   word-wrap: break-word;
@@ -146,19 +145,25 @@ blockquote {
   margin: var(--s-5) 0 var(--s0) var(--s0);
 }
 
-.tech-only {
-}
 
-.art-only {
-  display: none !important;
+.art-only { /* .scheme-default */
+  display: none;
 }
 
 .scheme-art .tech-only {
   display: none;
 }
 
+.scheme-tech .stack > .art-only + * {
+  margin-block-start: 0;
+}
+
+.scheme-art .stack > .tech-only + * {
+  margin-block-start: 0;
+}
+
 .scheme-art .art-only {
-  display: block !important;
+  display: block;
 }
 
 .sticky {

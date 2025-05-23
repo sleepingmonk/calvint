@@ -42,3 +42,8 @@ a.button.button--text {
   border: 0;
   background: transparent;
 }
+
+button.button--text::after,
+a.button.button--text::after {
+  content: '  \276F';
+}

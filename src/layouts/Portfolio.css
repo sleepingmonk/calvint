@@ -1,0 +1,29 @@
+.portfolio .reel {
+  background: var(--color-light);
+  scrollbar-color: var(--color-dark) var(--color-light);
+  scroll-snap-type: x mandatory;
+}
+
+.portfolio .reel::-webkit-scrollbar-track {
+  background-color: var(--color-light);
+}
+
+.portfolio .reel::-webkit-scrollbar-thumb {
+  background-color: var(--color-light);
+  background-image: linear-gradient(var(--color-light) 0, var(--color-light) 0.25rem, var(--color-base) 0.25rem, var(--color-base) 0.75rem, var(--color-light) 0.75rem);
+}
+
+.portfolio .reel > * {
+  scroll-snap-align: center;
+  inline-size: 90%;
+  margin: 0;
+}
+
+.portfolio .reel > * + * {
+  margin-inline-start: var(--s0);
+}
+
+.portfolio .reel img {
+  inline-size: 100%;
+  block-size: auto;
+}

@@ -11,15 +11,17 @@ interface Props {
   heading?: string;
   h?: HTMLTag;
   bgImage?: string;
+  bgColor?: string;
   icon?: string;
+  className?: string;
 }
 
-const { variant, buttonHref = "", buttonLabel = "", buttonExternal = false, heading = "", h: Hlevel = "h3", bgImage = "", icon = ""} = Astro.props;
+const { variant, buttonHref = "", buttonLabel = "", buttonExternal = false, heading = "", h: Hlevel = "h3", bgImage = "", bgColor = "base", icon = "", className} = Astro.props;
 
 const iconPath = icon ? `/sprites/icons.svg#${icon}` : "";
 
-const CardTag = variant == 'icon' ? 'a' : 'div';
-const cardProperties = variant == "icon" ? {
+const CardTag = variant == 'overlay' || variant == 'icon' ? 'a' : 'div';
+const cardProperties = variant == "overlay" ? {
   href: buttonHref
 } : {};
 const backgroundProperties = {
@@ -27,7 +29,7 @@ const backgroundProperties = {
   style: `--background-image: url(${bgImage});`
 }
 const variant_class = variant ? `card--${variant}` : 'card--default';
-const classes = `card ${variant_class}`;
+const classes = `card ${variant_class} card--bg-${bgColor} ${className || ""}`;
 ---
 
 <CardTag class={classes} { ...cardProperties } title={buttonLabel}>
@@ -62,13 +64,13 @@ const classes = `card ${variant_class}`;
       <div class="card__content">
         <slot />
       </div>
-      {variant !== "icon" && buttonHref ? (
+      {variant !== "icon" && variant !== "overlay" && buttonHref ? (
         <div class="card__button">
           <Button
             label={buttonLabel}
             href={buttonHref}
             external={buttonExternal}
-            type="secondary"
+            type="text"
             size="small"
           />
         </div>

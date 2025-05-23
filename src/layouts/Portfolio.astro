@@ -1,0 +1,59 @@
+---
+interface Frontmatter {
+  id: string;
+  scheme?: string;
+  title: string;
+  description?: string;
+  pubDate?: string;
+  heroImage?: string;
+  teaserImage?: string;
+  bgColor?: string;
+}
+
+interface Props {
+  id?: string;
+  frontmatter?: Frontmatter;
+}
+
+const { frontmatter = { id: null, scheme: "tech", title: "Hello, nurse!", description: null, pubDate: null, heroImage: null, bgColor: 'base' } } = Astro.props;
+
+import Footer from '../components/Organisms/Footer/Footer.astro';
+import Header from '../components/Organisms/Header/Header.astro';
+import Nav from '../components/Molecules/Nav/Nav.astro';
+import Section from '../components/Organisms/Section/Section.astro';
+import Stark from '../layouts/Stark.astro';
+import PortfolioPager from '../components/Molecules/PortfolioPager/PortfolioPager.astro';
+import '../styles/build-in.css';
+import './Portfolio.css';
+
+---
+
+<Stark title=`${frontmatter.title}` description=`${frontmatter.description}` className=`scheme-${frontmatter.scheme} portfolio` >
+	<main class="">
+		<Header
+			variant='small'
+			bgColor='base'
+		>
+		  <Nav />
+		</Header>
+    <Section
+      bgColor=`${frontmatter.bgColor}`
+      bgImage=`${frontmatter.heroImage}`
+      heading=`${frontmatter.title}`
+      level='1'
+      className="build-in build-in--top"
+    />
+    <Section className="build-in build-in--left">
+      <div class="center stack">
+        <slot />
+      </div>
+    </Section>
+    <PortfolioPager
+      variant=`${frontmatter.scheme}`
+      current=`${frontmatter.id}`
+    />
+	</main>
+	<Footer />
+</Stark>
+
+<script is:inline src="/js/BuildIn.js" />

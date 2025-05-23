@@ -4,16 +4,17 @@ import "./Cards.css"
 interface Props {
   variant?: string;
   cardWidth?: string;
+  className?: string;
 }
 
-const { variant, cardWidth = '60ch' } = Astro.props;
-const classes = `cards switcher cards--${variant}`;
+const { variant, cardWidth = '60ch', className } = Astro.props;
+const classes = `cards grid cards--${variant} ${className || ""}`;
 const cardsAttributes = {
   class: classes,
   style: `--measure: ${cardWidth}; font-size: var(--s0);`,
 };
 ---
 
-<div { ...cardsAttributes}>
+<div {...cardsAttributes}>
   <slot />
 </div>

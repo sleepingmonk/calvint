@@ -1,0 +1,31 @@
+---
+import Card from '../Card/Card.astro';
+import { getCollection } from 'astro:content';
+
+interface Props {
+  variant?: string;
+}
+
+const { variant = "tech" } = Astro.props;
+
+const cardCollection = (await getCollection('portfolio', ({ data }) => {
+	return data.scheme == variant && data.pubDate && data.pubDate <= new Date();
+})).sort((a, b) => a.data.pubDate.valueOf() - b.data.pubDate.valueOf());
+const cards = cardCollection.reverse();
+---
+
+{cards.map((card) => (
+  <Card
+    variant="overlay"
+    heading={card.data.title}
+    buttonHref={`/portfolio/${card.id}`}
+    buttonLabel="View"
+    buttonExternal={false}
+    bgImage={card.data.heroImage}
+    bgColor={card.data.bgColor}
+  >
+    <p>
+      {card.data.description}
+    </p>
+  </Card>
+))}

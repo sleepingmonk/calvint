@@ -29,6 +29,28 @@ const blog = defineCollection({
   loader: glob({ pattern: "**/*.md", base: "./src/pages/blog" })
 });
 
+const portfolio = defineCollection({
+	// Type-check frontmatter using a schema
+	schema: z.object({
+		layout: z.string(),
+		scheme: z.string(),
+		title: z.string(),
+		description: z.string(),
+		pubDate: z
+			.string()
+			.or(z.date())
+			.transform((val) => new Date(val)),
+		updatedDate: z
+			.string()
+			.optional()
+			.transform((str) => (str ? new Date(str) : undefined)),
+		heroImage: z.string().optional(),
+		teaserImage: z.string().optional(),
+		bgColor: z.string().optional(),
+	}),
+
+	loader: glob({ pattern: "**/*.md", base: "./src/pages/portfolio" })
+});
 
 // 4. Export a single `collections` object to register your collection(s)
-export const collections = { blog };
+export const collections = { blog, portfolio };

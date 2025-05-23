@@ -1,0 +1,56 @@
+---
+import { getCollection } from 'astro:content';
+import Cards from '../../components/Organisms/Cards/Cards.astro';
+import Footer from '../../components/Organisms/Footer/Footer.astro';
+import Header from '../../components/Organisms/Header/Header.astro';
+import Nav from '../../components/Molecules/Nav/Nav.astro';
+import Section from '../../components/Organisms/Section/Section.astro';
+import Stark from '../../layouts/Stark.astro';
+import Switch from '../../components/Atoms/Switch/Switch.astro';
+import PortfolioCards from '../../components/Molecules/PortfolioCards/PortfolioCards.astro';
+import SectionProof from '../../components/Organisms/SectionProof/SectionProof.astro'
+---
+
+<Stark title="Portfolio" description="Calvin's portfolio of work, including tech and the arts.">
+	<main class="">
+		<Header
+			variant='small'
+			bgColor='base'
+		>
+		  <Nav />
+		</Header>
+		<Section
+			heading="Portfolio"
+			level='1'
+		>
+		  <div class="center stack">
+				<Switch className="scheme-switch">
+					<div slot="prefix">&#x1F4BB;</div>
+					<div slot="suffix">&#x1F3AD;</div>
+				</Switch>
+				<ul class="tech-only">
+					<li><b>20+ years Web Development</b></li>
+					<li><b>God Level Problem Solver</b></li>
+					<li><b>Hire me if you want sh*t done</b></li>
+				</ul>
+			</div>
+		</Section>
+		<SectionProof className="tech-only" />
+		<Section>
+			<p class="tech-only">This is not an exhaustive list of everything I've worked on, that would be too many things. These are some highlights that standout to me for reasons you'll learn if you review them.</p>
+			<div class="art-only">
+				<Cards>
+					<PortfolioCards variant="art" />
+				</Cards>
+			</div>
+			<div class="tech-only stack">
+				<Cards>
+					<PortfolioCards variant="tech" />
+				</Cards>
+			</div>
+		</Section>
+	</main>
+	<Footer />
+	<script is:inline src="/js/SchemeSwitch.js"/>
+</Stark>
+
