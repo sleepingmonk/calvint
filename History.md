@@ -1,4 +1,11 @@
 
+0.1.0 / 2025-05-23
+==================
+
+  * feat: Portfolio and content.
+
+  62 files changed, 1036 insertions(+), 50 deletions(-)
+
 0.0.3 / 2025-02-28
 ==================
 
