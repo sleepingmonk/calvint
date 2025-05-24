@@ -26,7 +26,6 @@
 
 .proof.section .reel::-webkit-scrollbar-thumb {
   background-color: var(--color-accent);
-  background-image: linear-gradient(var(--color-accent) 0, var(--color-accent) 0.25rem, var(--color-dark) 0.25rem, var(--color-dark) 0.75rem, var(--color-accent) 0.75rem);
 }
 
 

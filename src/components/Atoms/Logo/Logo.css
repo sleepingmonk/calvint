@@ -7,7 +7,6 @@
 }
 
 .logo__logo img {
-  /* display: block; */
   height: var(--height);
   width: auto;
 }

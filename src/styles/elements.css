@@ -145,27 +145,6 @@ blockquote {
   margin: var(--s-5) 0 var(--s0) var(--s0);
 }
 
-
-div.art-only { /* .scheme-default */
-  display: none;
-}
-
-.scheme-art .tech-only {
-  display: none;
-}
-
-.scheme-tech .stack > .art-only + * {
-  margin-block-start: 0;
-}
-
-.scheme-art .stack > .tech-only + * {
-  margin-block-start: 0;
-}
-
-.scheme-art .art-only {
-  display: block;
-}
-
 .sticky {
   position: sticky;
   top: 1ch;

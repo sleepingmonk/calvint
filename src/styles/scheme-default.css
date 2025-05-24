@@ -93,3 +93,32 @@
   --color-secondary: #1B5299;
   --font-secondary: "Caveat", sans-serif;
 }
+
+.art-only,
+.scheme-tech .art-only,
+.scheme-tech img.art-only {
+  display: none;
+}
+
+.scheme-art .tech-only,
+.scheme-art img.tech-only {
+  display: none;
+}
+
+.scheme-tech .tech-only,
+.scheme-tech img.tech-only {
+  display: block;
+}
+
+.scheme-art .art-only,
+.scheme-art img.art-only {
+  display: block;
+}
+
+.scheme-tech .stack > .art-only + * {
+  margin-block-start: 0;
+}
+
+.scheme-art .stack > .tech-only + * {
+  margin-block-start: 0;
+}
