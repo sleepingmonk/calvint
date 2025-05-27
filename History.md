@@ -1,4 +1,11 @@
 
+0.1.6 / 2025-05-27
+==================
+
+  * content: Add Matilda to portfolio.
+
+  9 files changed, 55 insertions(+), 1 deletion(-)
+
 0.1.5 / 2025-05-27
 ==================
 
