@@ -1,4 +1,11 @@
 
+0.1.5 / 2025-05-27
+==================
+
+  * fix: Background images on cards and sections.
+
+  21 files changed, 171 insertions(+), 41 deletions(-)
+
 0.1.4 / 2025-05-24
 ==================
 
