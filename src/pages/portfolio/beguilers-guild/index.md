@@ -5,7 +5,7 @@
   scheme: "art",
   title: "Beguilder's Guild",
   description: "A small group or great entertainers.",
-  pubDate: '2024-07-23',
+  pubDate: '2006-07-23',
   updatedDate: '2024-07-23',
   heroImage: "/../src/pages/portfolio/beguilers-guild/bg.png",
 	teaserImage: "bg.png",

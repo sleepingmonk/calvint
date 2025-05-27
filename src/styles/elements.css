@@ -124,6 +124,10 @@ blockquote {
   font-style: italic;
 }
 
+small {
+  font-size: var(--s-1);
+}
+
 /* Extends layout-primitives .center */
 .center--items {
   --align-items: center;
