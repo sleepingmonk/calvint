@@ -23,8 +23,8 @@ import Nav from '../components/Molecules/Nav/Nav.astro';
 import Section from '../components/Organisms/Section/Section.astro';
 import Stark from '../layouts/Stark.astro';
 import PortfolioPager from '../components/Molecules/PortfolioPager/PortfolioPager.astro';
-import '../styles/build-in.css';
 import './Portfolio.css';
+import '../styles/lighting.css';
 
 if (frontmatter.heroImage) {
   frontmatter.heroImage = `/src/pages/portfolio/${frontmatter.id}/${frontmatter.heroImage}`;
@@ -45,9 +45,9 @@ if (frontmatter.heroImage) {
       bgImage=`${frontmatter.heroImage}`
       heading=`${frontmatter.title}`
       level='1'
-      className="build-in build-in--top"
+      className="fade-in"
     />
-    <Section className="build-in build-in--left">
+    <Section className="fade-in">
       <div class="center stack">
         <slot />
       </div>
@@ -60,4 +60,4 @@ if (frontmatter.heroImage) {
 	<Footer />
 </Stark>
 
-<script is:inline src="/js/BuildIn.js" />
+<script is:inline src="/js/Lighting.js" />

@@ -1,14 +1,14 @@
 ---
 {
   id: "beguilders-guild",
-  layout: '../../../layouts/Portfolio.astro',
+  layout: '../../../layouts/Portfolio2.astro',
   scheme: "art",
   title: "Beguilder's Guild",
   description: "A small group or great entertainers.",
   pubDate: '2024-07-23',
   updatedDate: '2024-07-23',
   heroImage: "/../src/pages/portfolio/beguilers-guild/bg.png",
-	teaserImage: "/../src/pages/portfolio/beguilers-guild/bg.png",
+	teaserImage: "bg.png",
 	bgColor: "light",
 }
 ---

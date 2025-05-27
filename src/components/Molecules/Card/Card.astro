@@ -2,6 +2,7 @@
 import './Card.css';
 import type { HTMLTag } from 'astro/types';
 import Button from '../../Atoms/Button/Button.astro';
+import { Image } from 'astro:assets';
 
 interface Props {
   variant?: string;
@@ -17,19 +18,15 @@ interface Props {
 }
 
 const { variant, buttonHref = "", buttonLabel = "", buttonExternal = false, heading = "", h: Hlevel = "h3", bgImage = "", bgColor = "base", icon = "", className} = Astro.props;
-
 const iconPath = icon ? `/sprites/icons.svg#${icon}` : "";
-
 const CardTag = variant == 'overlay' || variant == 'icon' ? 'a' : 'div';
 const cardProperties = variant == "overlay" ? {
   href: buttonHref
 } : {};
-const backgroundProperties = {
-  class: "card__background",
-  style: `--background-image: url(${bgImage});`
-}
 const variant_class = variant ? `card--${variant}` : 'card--default';
 const classes = `card ${variant_class} card--bg-${bgColor} ${className || ""}`;
+
+
 ---
 
 <CardTag class={classes} { ...cardProperties } title={buttonLabel}>
@@ -51,8 +48,13 @@ const classes = `card ${variant_class} card--bg-${bgColor} ${className || ""}`;
         </div>
       </div>
     ) : null}
-    {variant?.includes("overlay") ? (
-      <div { ...backgroundProperties }></div>
+    {variant?.includes("overlay") && bgImage ? (
+      <div class="card__background">
+        <Image
+          src={bgImage}
+          alt={heading}
+        />
+      </div>
       <div class="card__tint"></div>
     ) : null}
     <div class="card__main box stack center">

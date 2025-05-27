@@ -4,11 +4,11 @@
   layout: '../../../layouts/Portfolio.astro',
   scheme: "tech",
   title: "JCC: DevOps",
-  description: "Deploying and manageing dozens of sites.",
+  description: "Deploying and managing dozens of sites.",
   pubDate: '2023-01-03',
   updatedDate: '2023-01-02',
-  heroImage: "/../src/pages/portfolio/jcc-devops/bg.png",
-	teaserImage: "/../src/pages/portfolio/jcc-devops/bg.png",
+  heroImage: "bg.png",
+	teaserImage: "bg.png",
 	bgColor: "dark",
 }
 ---

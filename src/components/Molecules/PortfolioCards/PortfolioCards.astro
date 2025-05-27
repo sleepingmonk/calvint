@@ -1,15 +1,22 @@
 ---
 import Card from '../Card/Card.astro';
 import { getCollection } from 'astro:content';
+import type { ImageMetadata } from 'astro';
+
 
 interface Props {
   variant?: string;
 }
 
 const { variant = "tech" } = Astro.props;
+const images = import.meta.glob<{ default: ImageMetadata }>(`/src/pages/portfolio/**/*.{jpeg,jpg,png,gif,webp}`, { eager: true });
 
-const cardCollection = (await getCollection('portfolio', ({ data }) => {
-	return data.scheme == variant && data.pubDate && data.pubDate <= new Date();
+const cardCollection = (await getCollection('portfolio', ({ data, id }) => {
+  if (data.scheme == variant && data.pubDate && data.pubDate <= new Date()) {
+    const imagePath = `/src/pages/portfolio/${id}/${data.teaserImage}`;
+    data.teaserImage = images[imagePath]?.default ?? null;
+    return data;
+  }
 })).sort((a, b) => a.data.pubDate.valueOf() - b.data.pubDate.valueOf());
 const cards = cardCollection.reverse();
 ---
@@ -21,7 +28,7 @@ const cards = cardCollection.reverse();
     buttonHref={`/portfolio/${card.id}`}
     buttonLabel="View"
     buttonExternal={false}
-    bgImage={card.data.heroImage}
+    bgImage={card.data.teaserImage}
     bgColor={card.data.bgColor}
   >
     <p>

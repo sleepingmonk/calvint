@@ -13,8 +13,6 @@ const techPosts = (await getCollection('blog', ({ data }) => {
 	return data.scheme == 'tech';
 })).sort((a, b) => a.data.pubDate.valueOf() - b.data.pubDate.valueOf());
 
-console.log(techPosts);
-
 const techSet = techPosts.reverse().slice(0, 5);
 
 // Get art posts.

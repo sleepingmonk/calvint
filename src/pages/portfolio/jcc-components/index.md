@@ -7,8 +7,8 @@
   description: "Composable, algorithmic layouts.",
   pubDate: '2023-01-04',
   updatedDate: '2023-01-01',
-  heroImage: "/../src/pages/portfolio/jcc-components/bg.png",
-	teaserImage: "/../src/pages/portfolio/jcc-components/bg.png",
+  heroImage: "bg.png",
+	teaserImage: "bg.png",
 	bgColor: "dark",
 }
 ---

@@ -16,6 +16,8 @@ interface Props {
 import './Section.css';
 import Brow from "../../Atoms/Brow/Brow.astro";
 import Button from "../../Atoms/Button/Button.astro";
+import { Image } from 'astro:assets';
+import type { ImageMetadata } from 'astro';
 
 const {
   justify = "center",
@@ -31,10 +33,14 @@ const {
   className
 } = Astro.props;
 
+const images = import.meta.glob<{ default: ImageMetadata }>(`/src/pages/portfolio/**/*.{jpeg,jpg,png,gif,webp}`, { eager: true });
+const imgSrc = bgImage ? images[bgImage]?.default : "";
 const Hlevel = "h" + level;
+
 const hAttributes = {
   class: "section__heading"
 };
+
 const classes = [
   'section',
   `section--justify-${justify}`,
@@ -45,8 +51,13 @@ const classes = [
 ---
 
 <div class={classes.join(' ')}>
-  {bgImage ? (
-    <div class="section__image" style={`--background-image: url(${bgImage});`}></div>
+  {imgSrc ? (
+    <div class="section__image">
+      <Image
+        src={imgSrc}
+        alt={heading || "Section background image"}
+      />
+    </div>
     <div class="section__tint"></div>
   ) : null}
   <div class="section__content box stack">

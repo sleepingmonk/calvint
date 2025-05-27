@@ -7,8 +7,8 @@
   description: "Think like a black belt.",
   pubDate: '2024-07-23',
   updatedDate: '2024-07-23',
-  heroImage: "/../src/pages/portfolio/wayofbjj/bg.webp",
-	teaserImage: "/../src/pages/portfolio/wayofbjj/bg.webp",
+  heroImage: "bg.jpg",
+	teaserImage: "bg.jpg",
 	bgColor: "dark",
 }
 ---

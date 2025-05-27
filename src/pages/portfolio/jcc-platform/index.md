@@ -7,8 +7,8 @@
   description: "Building a scalable platform.",
   pubDate: '2023-01-02',
   updatedDate: '2023-01-01',
-  heroImage: "/../src/pages/portfolio/jcc-platform/bg.png",
-	teaserImage: "/../src/pages/portfolio/jcc-platform/bg.png",
+  heroImage: "bg.png",
+	teaserImage: "bg.png",
 	bgColor: "dark",
 }
 ---

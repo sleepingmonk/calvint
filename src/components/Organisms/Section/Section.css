@@ -31,10 +31,18 @@
 }
 
 .section__image {
-  background-image: var(--background-image);
-  background-position: center center;
-  background-size: cover;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 0;
+  position: relative;
+}
+
+.section__image img {
+  inline-size: 100%;
   block-size: 100%;
+  object-fit: cover;
+  position: absolute;
 }
 
 .section__tint {

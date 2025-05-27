@@ -7,8 +7,8 @@
   description: "Migrating 50+ RedDot sites to Drupal.",
   pubDate: '2023-01-01',
   updatedDate: '2023-01-01',
-  heroImage: "/../src/pages/portfolio/jcc-components/bg.png",
-	teaserImage: "/../src/pages/portfolio/jcc-components/bg.png",
+  heroImage: "bg.png",
+	teaserImage: "bg.png",
 	bgColor: "dark",
 }
 ---

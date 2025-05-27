@@ -7,8 +7,8 @@
   description: "My kids think I'm cool now.",
   pubDate: '2020-01-01',
   updatedDate: '2022-01-01',
-  heroImage: "/../src/pages/portfolio/pokemon/bg.png",
-	teaserImage: "/../src/pages/portfolio/pokemon/bg.png",
+  heroImage: "bg.png",
+	teaserImage: "bg.png",
 	bgColor: "accent",
 }
 ---
