@@ -1,4 +1,11 @@
 
+0.2.2 / 2025-05-29
+==================
+
+  * fix: line formatting on one more ride...
+
+  1 file changed, 3 insertions(+), 3 deletions(-)
+
 0.2.1 / 2025-05-29
 ==================
 
@@ -88,7 +95,3 @@
   * chore: Add README.md.
   * Ready?
   * Initial commit from Astro
-
-
-
-
