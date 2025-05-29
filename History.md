@@ -1,4 +1,11 @@
 
+0.2.0 / 2025-05-29
+==================
+
+  * feat: update blog to include pager.
+
+  7 files changed, 115 insertions(+), 71 deletions(-)
+
 0.1.6 / 2025-05-27
 ==================
 
