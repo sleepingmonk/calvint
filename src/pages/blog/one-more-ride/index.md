@@ -11,10 +11,10 @@
 ---
 Leather and gasoline\
 asphalt and dreams\
-The winding road\
-The long way home\
+The winding road, the long way home\
 No straight lines from A to B\
-We only have a few short months before we lose the roads\
+We only have a few short months\
+before we lose the roads\
 So I gear up and I take\
 one more ride before the cold
 
