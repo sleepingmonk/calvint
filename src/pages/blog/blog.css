@@ -1,0 +1,8 @@
+.blog .pager {
+  inline-size: 100%;
+  justify-content: space-between;
+}
+
+.blog .pager a {
+  text-decoration: none;
+}

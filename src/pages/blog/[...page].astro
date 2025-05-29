@@ -1,0 +1,57 @@
+---
+import { getCollection } from 'astro:content';
+import BlogLinks from '../../components/Molecules/BlogLinks/BlogLinks.astro';
+import Footer from '../../components/Organisms/Footer/Footer.astro';
+import Header from '../../components/Organisms/Header/Header.astro';
+import Nav from '../../components/Molecules/Nav/Nav.astro';
+import Section from '../../components/Organisms/Section/Section.astro';
+import Stark from '../../layouts/Stark.astro';
+
+import './blog.css';
+
+export async function getStaticPaths({ paginate }) {
+	// Get tech posts.
+	const blogPosts = (await getCollection('blog', ({ data }) => {
+		return true;
+	})).sort((a, b) => a.data.pubDate.valueOf() - b.data.pubDate.valueOf());
+
+	const blogSet = blogPosts.reverse();
+  // Generate pages from our array of astronauts, with 2 to a page
+  return paginate(blogPosts, { pageSize: 20 });
+}
+
+const { page } = Astro.props;
+---
+
+<Stark title="About Calvin">
+	<main class="blog">
+		<Header
+			variant="small"
+			bgColor="base"
+		>
+			<Nav />
+		</Header>
+		<Section
+			brow=""
+			heading="Ramblings"
+			bgColor="light"
+			level="2"
+			className=""
+		>
+			<div class="center stack">
+				<p>With the relaunch of this site, I'm reviewing the old blog and various writings of the past to repost here. I'll also be posting new content as regularly as I can manage. Thanks for looking around.</p>
+			</div>
+			<div class="center stack">
+				<BlogLinks posts={page.data} />
+				<div class="pager cluster">
+					{ page.url.first ? <a href={page.url.first}>&larrb;</a> : <div>&nbsp;&nbsp;&nbsp;&nbsp;</div> }
+					{ page.url.prev ? <a href={page.url.prev}>&larr;</a> : <div>&nbsp;&nbsp;&nbsp;&nbsp;</div> }
+					{ page.currentPage ? <div>{page.currentPage}</div> : <div>&nbsp;&nbsp;&nbsp;&nbsp;</div> }
+					{ page.url.next ? <a href={page.url.next}>&rarr;</a> : <div>&nbsp;&nbsp;&nbsp;&nbsp;</div> }
+					{ page.url.last ? <a href={page.url.last}>&rarrb;</a> : <div>&nbsp;&nbsp;&nbsp;&nbsp;</div> }
+				</div>
+			</div>
+		</Section>
+	</main>
+	<Footer />
+</Stark>
