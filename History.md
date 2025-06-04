@@ -1,4 +1,11 @@
 
+0.2.5 / 2025-06-03
+==================
+
+  * fix: tweak portfolio layout.
+
+  1 file changed, 15 insertions(+), 6 deletions(-)
+
 0.2.4 / 2025-06-03
 ==================
 
