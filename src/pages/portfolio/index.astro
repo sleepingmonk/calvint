@@ -19,6 +19,7 @@ import SectionProof from '../../components/Organisms/SectionProof/SectionProof.a
 		>
 		  <Nav />
 		</Header>
+		<SectionProof className="tech-only" />
 		<Section
 			heading="Portfolio"
 			level='1'
@@ -28,15 +29,22 @@ import SectionProof from '../../components/Organisms/SectionProof/SectionProof.a
 					<div slot="prefix">&#x1F4BB;</div>
 					<div slot="suffix">&#x1F3AD;</div>
 				</Switch>
-				<ul class="tech-only">
-					<li><b>20+ years Web Development</b></li>
-					<li><b>High Level Problem Solver</b></li>
-					<li><b>Hire me if you want sh*t done</b></li>
-					<li ><a href="/Resume.pdf"><b>View Resume</b></a></li>
+				<div class="switcher tech-only" style="--measure: 20ch; row-gap: 0;">
+					<div>
+						<ul class="">
+							<li><b>20+ years Web Development</b></li>
+							<li><b>High Level Problem Solver</b></li>
+						</ul>
+					</div>
+					<div>
+						<ul class="">
+							<li><b>Hire me if you want sh*t done</b></li>
+							<li ><a href="/Resume.pdf" target="_blank"><b>View Resume</b></a></li>
+						</ul>
+					</div>
 				</ul>
 			</div>
 		</Section>
-		<SectionProof className="tech-only" />
 		<Section>
 			<p class="tech-only">This is not an exhaustive list of everything I've worked on, that would be too many things. These are some highlights that standout to me for reasons you'll learn if you review them.</p>
 			<div class="art-only">
@@ -55,3 +63,4 @@ import SectionProof from '../../components/Organisms/SectionProof/SectionProof.a
 	<script is:inline src="/js/SchemeSwitch.js"/>
 </Stark>
 
+<p></p>
