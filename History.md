@@ -1,4 +1,11 @@
 
+0.2.8 / 2025-06-25
+==================
+
+  * chore: update Resume.pdf
+
+  1 file changed, 0 insertions(+), 0 deletions(-)
+
 0.2.7 / 2025-06-25
 ==================
 
