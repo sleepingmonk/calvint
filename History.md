@@ -1,4 +1,11 @@
 
+0.2.6 / 2025-06-25
+==================
+
+  * chore: content tweaks.
+
+  2 files changed, 2 insertions(+), 2 deletions(-)
+
 0.2.5 / 2025-06-03
 ==================
 
