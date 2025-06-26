@@ -35,7 +35,7 @@ My approach to DevOps begins with a flexible Git workflow. See documentation her
 
 This project was destined for a flexible cloud hosting platform, but we were required to deploy our initial work to a rigid hosting platform that has a very opinionated way of doing things. This meant we had to be careful about how we set up our Git workflow and our deployment process.
 
-I built our CI/CD pipeline and custom scripts to make the deployment process identical, regardles of the hosting platform. All that would be required to move from the inital hosting platform to a more flexible infrastructure would be some minor configuration changes to the deployment scripts.
+I built our CI/CD pipeline and custom scripts to make the deployment process identical, regardless of the hosting platform. All that would be required to move from the inital hosting platform to a more flexible infrastructure would be some minor configuration changes to the deployment scripts.
 
 This project was mainly a Drupal Multisite configuration, but the initial hosting platform required us to host each database in a separate platform instance, bypassing the platform's rigid deployment process. We needed to be able to deploy the same codebase to multiple instances on the hosting platform. Then with drush and some custom bash scripts we could manage each site independently or as a group. This enabled fleet wide maintenance tasks to be performed with a single command. It had to handle 50+ websites without changing the developer experince if/when the time came to move to a more flexible hosting platform.
 
