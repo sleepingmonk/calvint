@@ -1,4 +1,11 @@
 
+0.2.9 / 2025-06-29
+==================
+
+  * chore: Melville Boys post and minor fixes.
+
+  12 files changed, 58 insertions(+), 7 deletions(-)
+
 0.2.8 / 2025-06-25
 ==================
 
