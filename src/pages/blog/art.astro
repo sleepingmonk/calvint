@@ -5,9 +5,9 @@ import Section from '../../components/Organisms/Section/Section.astro';
 import { getCollection } from 'astro:content';
 import "../../layouts/Blog.css";
 
-const posts = await getCollection('blog', ({ data }) => {
+const posts = (await getCollection('blog', ({ data }) => {
   return data.scheme == 'art';
-});
+})).sort((a, b) => a.data.pubDate.valueOf() - b.data.pubDate.valueOf()).reverse();
 ---
 
 <Layout

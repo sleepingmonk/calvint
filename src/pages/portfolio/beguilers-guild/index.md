@@ -1,9 +1,9 @@
 ---
 {
-  id: "beguilders-guild",
+  id: "beguilers-guild",
   layout: '../../../layouts/Portfolio2.astro',
   scheme: "art",
-  title: "Beguilder's Guild",
+  title: "Beguiler's Guild",
   description: "A small group or great entertainers.",
   pubDate: '2006-07-23',
   updatedDate: '2024-07-23',

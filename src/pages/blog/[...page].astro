@@ -16,7 +16,6 @@ export async function getStaticPaths({ paginate }) {
 	})).sort((a, b) => a.data.pubDate.valueOf() - b.data.pubDate.valueOf());
 
 	const blogSet = blogPosts.reverse();
-  // Generate pages from our array of astronauts, with 2 to a page
   return paginate(blogPosts, { pageSize: 20 });
 }
 

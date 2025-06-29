@@ -7,7 +7,11 @@ a.button {
   border: 2px solid var(--button-fg);
   border-radius: var(--border-radius);
   color: var(--button-fg);
+  /* Section adds text-shadow. */
+  /* @todo Target section text-shadown better
+  so we don't need to override downstream. */
   text-decoration: none;
+  text-shadow: none;
   font-family: var(--font-primary);
   font-size: var(--s1);
   line-height: var(--s1);
