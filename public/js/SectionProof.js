@@ -22,7 +22,7 @@ document.addEventListener('DOMContentLoaded', () => {
 
     const remainingScrollDistance = reel.scrollWidth - reel.scrollLeft - reel.clientWidth;
 
-    if (remainingScrollDistance === 0) {
+    if (remainingScrollDistance < reel.clientWidth) {
       scrollDir = -1;
     }
 
@@ -31,5 +31,5 @@ document.addEventListener('DOMContentLoaded', () => {
     }
 
     reel.scrollLeft += reel.clientWidth * scrollDir;
-  }, 10000);
+  }, 9000);
 });

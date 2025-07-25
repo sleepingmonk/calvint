@@ -17,7 +17,7 @@ const { className } = Astro.props;
   bgColor="dark"
   className=`${className ? className : ""} proof`
 >
-  <div class='reel'>
+  <div class='reel overflowing'>
     <div class='item'>
       <quote>“This work is exceptional (as I have always known it would be) - Your module is well built, responsibly commented and scalable. and I really appreciate it.”</quote> <cite>— Bob McDiarmid, Workday Inc.</cite>
     </div>
@@ -42,6 +42,11 @@ const { className } = Astro.props;
     <div class="item">
       <quote>"I do really want to thank you for all of the help and your patience with me over the last 2 or so years. i’ve sincerely learned a ton from you and really, really appreciate it!"</quote><cite>--Jared Beckler (Support Engineer - Acquia)</cite>
     </div>
+  </div>
+  <div class="reel-hint">
+    <div><</div>
+    <div class="reel-hint__text">more</div>
+    <div>></div>
   </div>
 </Section>
 
