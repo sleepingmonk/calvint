@@ -1,4 +1,11 @@
 
+0.2.10 / 2025-07-25
+===================
+
+  * fix: Section Proof improvements.
+
+  3 files changed, 27 insertions(+), 4 deletions(-)
+
 0.2.9 / 2025-06-29
 ==================
 
