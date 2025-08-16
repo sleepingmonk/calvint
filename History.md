@@ -1,4 +1,11 @@
 
+0.3.0 / 2025-08-16
+==================
+
+  * Update Section Proof and add new ReelIndicator component.
+
+  4 files changed, 110 insertions(+), 26 deletions(-)
+
 0.2.11 / 2025-07-25
 ===================
 
