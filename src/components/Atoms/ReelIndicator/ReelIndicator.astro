@@ -1,0 +1,26 @@
+---
+/**
+ * variant: default
+ */
+
+ import "./ReelIndicator.css";
+
+interface Props {
+  variant?: string;
+  total?: number;
+  item?: number;
+}
+
+const { variant = "default" } = Astro.props;
+const variant_type = `brow--${variant}`;
+const classes = `reel__indicator ${variant_type}`;
+
+const { total = 8, item = 0 } = Astro.props;
+---
+<div class={classes}>
+  {Array.from({ length: total }).map((_, i) =>
+    i === Astro.props.item
+      ? <span>&mdash;</span>
+      : <span>&hearts;</span>
+  )}
+</div>

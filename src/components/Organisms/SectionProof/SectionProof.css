@@ -25,11 +25,6 @@
   margin-block-start: var(--s-2);
 }
 
-.proof.section .reel-hint__text {
-  font-size: var(--s-1);
-  font-weight: 600;
-}
-
 .reel::-webkit-scrollbar {
   block-size: var(--s-3);
 }
