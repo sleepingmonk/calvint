@@ -1,4 +1,11 @@
 
+0.3.1 / 2025-08-16
+==================
+
+  * Datafy SectionProof
+
+  3 files changed, 58 insertions(+), 82 deletions(-)
+
 0.3.0 / 2025-08-16
 ==================
 
