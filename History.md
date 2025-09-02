@@ -1,4 +1,11 @@
 
+0.3.2 / 2025-09-02
+==================
+
+  * content: Link to bionic and remove hire me content on portfolio page.
+
+  2 files changed, 6 insertions(+), 13 deletions(-)
+
 0.3.1 / 2025-08-16
 ==================
 
