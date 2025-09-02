@@ -1,4 +1,11 @@
 
+0.3.3 / 2025-09-02
+==================
+
+  * chore: remove Resume.pdf
+
+  1 file changed, 0 insertions(+), 0 deletions(-)
+
 0.3.2 / 2025-09-02
 ==================
 
