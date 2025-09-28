@@ -1,4 +1,11 @@
 
+0.3.4 / 2025-09-27
+==================
+
+  * chore: Content updates.
+
+  13 files changed, 28 insertions(+), 13 deletions(-)
+
 0.3.3 / 2025-09-02
 ==================
 
