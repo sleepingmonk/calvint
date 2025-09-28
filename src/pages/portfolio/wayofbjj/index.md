@@ -33,6 +33,3 @@ I worked with my founding partners for 2 years to understand and translate their
  - Unique content format to focus your training.
  - Video Production of instructor content.
  - Instructor revenue share.
- - Many more features to come.
-
-<a href="https://wayof.app" target="_blank" rel="noopener noreferrer">Check it out!</a>
