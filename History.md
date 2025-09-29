@@ -1,4 +1,11 @@
 
+0.4.0 / 2025-09-29
+==================
+
+  * feat: Make scheme switch persistent on all content. content: Update Mellville Boys portfolio.
+
+  13 files changed, 27 insertions(+), 23 deletions(-)
+
 0.3.5 / 2025-09-27
 ==================
 
