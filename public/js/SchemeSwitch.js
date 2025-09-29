@@ -13,11 +13,15 @@ if (switchTrigger && !switchTrigger.classList.contains('js-scheme-switch')) {
     }
   });
 
-  if (localStorage.getItem('scheme') === 'art') {
+}
+
+if (localStorage.getItem('scheme') === 'art') {
+  const hasScheme = document.body.classList.contains('scheme-tech');
+  if (!hasScheme) {
     document.body.classList.add('scheme-art');
     switchTrigger.classList.add('switched');
-  } else {
-    document.body.classList.remove('scheme-art');
-    switchTrigger.classList.remove('switched');
   }
+} else {
+  document.body.classList.remove('scheme-art');
+  switchTrigger.classList.remove('switched');
 }

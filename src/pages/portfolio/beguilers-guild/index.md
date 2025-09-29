@@ -4,7 +4,7 @@
   layout: '../../../layouts/Portfolio2.astro',
   scheme: "art",
   title: "Beguiler's Guild",
-  description: "A small group or great entertainers.",
+  description: "A small group of great entertainers.",
   pubDate: '2006-07-23',
   updatedDate: '2024-07-23',
   heroImage: "/../src/pages/portfolio/beguilers-guild/bg.png",

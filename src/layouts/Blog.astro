@@ -19,7 +19,9 @@ import '../styles/layout-primitives.css';
 import '../styles/scheme-default.css';
 import './Blog.css';
 
-const { frontmatter = { title: "Hello, nurse!", pubDate: null, tag: '...'} } = Astro.props;
+const { frontmatter = { title: "Hello, nurse!", pubDate: null, tag: '...', scheme: ''} } = Astro.props;
+
+const schemeClass = frontmatter.scheme ? `scheme-${frontmatter.scheme}` : '';
 ---
 
 <!doctype html>
@@ -31,7 +33,7 @@ const { frontmatter = { title: "Hello, nurse!", pubDate: null, tag: '...'} } = A
 		<link rel="icon" type="image/svg+xml" href="/favicon.svg" />
 		<title>{frontmatter.title}</title>
 	</head>
-	<div class=`blog cover scheme-${frontmatter.scheme}`>
+	<body class=`blog cover ${schemeClass}`>
 		<Header
 			variant="small"
 			bgColor="base"
@@ -51,6 +53,7 @@ const { frontmatter = { title: "Hello, nurse!", pubDate: null, tag: '...'} } = A
 				</div>
 			</div>
 		</div>
-		<Footer />
-	</div>
+	</body>
+	<Footer />
+	<script is:inline src="/js/SchemeSwitch.js"/>
 </html>
