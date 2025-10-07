@@ -10,13 +10,17 @@ interface Props {
 const { variant = "tech", current = null } = Astro.props;
 
 const itemCollection = (await getCollection('portfolio', ({ data }) => {
-	return data.scheme == variant && data.pubDate && data.pubDate <= new Date();
-})).sort((a, b) => a.data.pubDate.valueOf() - b.data.pubDate.valueOf());
+  return data.scheme == variant && data.pubDate && new Date(data.pubDate) <= new Date();
+})).sort((a, b) => new Date(a.data.pubDate).getTime() - new Date(b.data.pubDate).getTime());
+
 
 const currentItem = itemCollection.find((item) => item.id === current);
-const nextItem = itemCollection[itemCollection.indexOf(currentItem) - 1];
-const previousItem = itemCollection[itemCollection.indexOf(currentItem) + 1];
+const nextItem = currentItem ? itemCollection[itemCollection.indexOf(currentItem) - 1] : null;
+const previousItem = currentItem ? itemCollection[itemCollection.indexOf(currentItem) + 1] : null;
 
+itemCollection.forEach((item) => {
+  console.log(previousItem?.id, currentItem?.id, nextItem?.id, item.id, item.data.pubDate);
+});
 ---
 <div class="pager box">
   <!-- <div class="center"> -->

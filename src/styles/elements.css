@@ -126,6 +126,7 @@ blockquote {
 
 small {
   font-size: var(--s-1);
+  line-height: var(--s0);
 }
 
 /* Extends layout-primitives .center */

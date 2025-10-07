@@ -37,13 +37,9 @@ const portfolio = defineCollection({
 		title: z.string(),
 		description: z.string(),
 		pubDate: z
-			.string()
-			.or(z.date())
-			.transform((val) => new Date(val)),
+			.string().date(),
 		updatedDate: z
-			.string()
-			.optional()
-			.transform((str) => (str ? new Date(str) : undefined)),
+			.string().date(),
 		heroImage: z.string().optional(),
 		teaserImage: z.string().optional(),
 		bgColor: z.string().optional(),

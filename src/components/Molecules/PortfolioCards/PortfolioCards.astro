@@ -9,30 +9,44 @@ interface Props {
 }
 
 const { variant = "tech" } = Astro.props;
-const images = import.meta.glob<{ default: ImageMetadata }>(`/src/pages/portfolio/**/*.{jpeg,jpg,png,gif,webp}`, { eager: true });
+const images = import.meta.glob<{
+  default: ImageMetadata
+}>(
+  [
+    '/src/pages/portfolio/**/*.{jpeg,jpg,png,gif,webp}',
+    '/public/img/**/placeholder.jpg'
+  ],
+  { eager: true }
+);
 
 const cardCollection = (await getCollection('portfolio', ({ data, id }) => {
-  if (data.scheme == variant && data.pubDate && data.pubDate <= new Date()) {
+  if (data.scheme == variant && data.pubDate && new Date(data.pubDate) <= new Date()) {
     const imagePath = `/src/pages/portfolio/${id}/${data.teaserImage}`;
-    data.teaserImage = images[imagePath]?.default ?? null;
+    const placeholderPath = `/public/img/placeholder.jpg`;
+
+    // Extract the URL from the ImageMetadata
+    data.teaserImage = images[imagePath]?.default ?? images[placeholderPath]?.default;
     return data;
   }
-})).sort((a, b) => a.data.pubDate.valueOf() - b.data.pubDate.valueOf());
+})).sort((a, b) => new Date(a.data.pubDate).getTime() - new Date(b.data.pubDate).getTime());
 const cards = cardCollection.reverse();
 ---
 
-{cards.map((card) => (
-  <Card
-    variant="overlay"
-    heading={card.data.title}
-    buttonHref={`/portfolio/${card.id}`}
-    buttonLabel="View"
-    buttonExternal={false}
-    bgImage={card.data.teaserImage}
-    bgColor={card.data.bgColor}
-  >
-    <p>
-      {card.data.description}
-    </p>
-  </Card>
-))}
+{cards.map((card) => {
+  let image = null;
+
+  return (
+    <Card
+      variant="overlay"
+      heading={card.data.title}
+      buttonHref={`/portfolio/${card.id}`}
+      buttonLabel="View"
+      buttonExternal={false}
+      bgImage={card.data.teaserImage ?? null}
+      bgColor={card.data.bgColor}
+    >
+      <p><small>{card.data.description}</small></p>
+    </Card>
+  );
+})}
+

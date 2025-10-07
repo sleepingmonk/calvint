@@ -75,7 +75,7 @@
     white 60%
   );
 
-  --border-radius: var(--s-1);
+  --border-radius: var(--s-3);
 
   font-size: 21px;
 }

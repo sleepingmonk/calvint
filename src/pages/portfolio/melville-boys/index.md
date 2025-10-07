@@ -5,7 +5,7 @@
   scheme: "art",
   title: "The Melville Boys",
   description: "A touching comedy by Norm Foster.",
-  pubDate: '2025-05-27',
+  pubDate: '2025-08-27',
   updatedDate: '2025-05-27',
   heroImage: "banner.jpg",
 	teaserImage: "banner.jpg",
@@ -27,11 +27,14 @@
 
   ![The Set](./set.jpg)
 
+  ![The Gang](./cougars.jpg)
+
 </div>
 
 **Credit:** Lee\
 **Run:** 9 - 26, 2025\
-**Tickets:** <a href="https://www.echoplayers.ca/buy-tickets/the-melville-boys" target="_blank" rel="nofollow noopener">Buy Now</a>
+**Tickets:** <a href="https://www.echoplayers.ca/buy-tickets/the-melville-boys" target="_blank" rel="nofollow noopener">Buy Now</a>\
+**PQB News Spotlight:** <a href="https://www.pqbnews.com/entertainment/the-melville" target="_blank" rel="nofollow noopener">Read Article</a>
 
 ## A Touching Comedy by Norm Foster
 
