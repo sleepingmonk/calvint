@@ -1,4 +1,11 @@
 
+0.4.1 / 2025-10-07
+==================
+
+  * content: Update arts portfolio.
+
+  69 files changed, 383 insertions(+), 32 deletions(-)
+
 0.4.0 / 2025-09-29
 ==================
 
