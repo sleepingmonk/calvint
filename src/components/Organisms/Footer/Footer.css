@@ -27,6 +27,10 @@
   list-style: none;
 }
 
+.footer__menu .switch__container {
+  display: none;
+}
+
 .footer .nav-item.active {
   font-weight: bold;
   color: var(--color-accent);

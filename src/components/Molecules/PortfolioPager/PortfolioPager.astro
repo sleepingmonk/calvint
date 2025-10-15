@@ -7,40 +7,33 @@ interface Props {
   current?: string;
 }
 
-const { variant = "tech", current = null } = Astro.props;
+const { variant = "art", current = null } = Astro.props;
 
 const itemCollection = (await getCollection('portfolio', ({ data }) => {
   return data.scheme == variant && data.pubDate && new Date(data.pubDate) <= new Date();
 })).sort((a, b) => new Date(a.data.pubDate).getTime() - new Date(b.data.pubDate).getTime());
 
-
 const currentItem = itemCollection.find((item) => item.id === current);
 const nextItem = currentItem ? itemCollection[itemCollection.indexOf(currentItem) - 1] : null;
 const previousItem = currentItem ? itemCollection[itemCollection.indexOf(currentItem) + 1] : null;
-
-itemCollection.forEach((item) => {
-  console.log(previousItem?.id, currentItem?.id, nextItem?.id, item.id, item.data.pubDate);
-});
 ---
 <div class="pager box">
-  <!-- <div class="center"> -->
-    <div class="switcher" style="align-items: center; justify-content: center;">
-      {previousItem ? (
-        <div class="pager__previous">
-          <a href={`/portfolio/${previousItem.id}`} class="pager__link pager__link--prev">
-            <span class="pager__label">&larr;</span>
-            <span class="pager__title">{previousItem.data.title}</span>
-          </a>
-        </div>
-      ) : <div></div> }
-      {nextItem ? (
-        <div class="pager__next">
-          <a href={`/portfolio/${nextItem.id}`} class="pager__link pager__link--next">
-            <span class="pager__title">{nextItem.data.title}</span>
-            <span class="pager__label">&rarr;</span>
-          </a>
-        </div>
-      ) : <div></div> }
-    </div>
-  <!-- </div> -->
+  <div class="switcher" style="align-items: center; justify-content: center;">
+    {previousItem ? (
+      <div class="pager__previous">
+        <a href={`/portfolio/${previousItem.id}`} class="pager__link pager__link--prev">
+          <span class="pager__label">&larr;</span>
+          <span class="pager__title">{previousItem.data.title}</span>
+        </a>
+      </div>
+    ) : <div></div> }
+    {nextItem ? (
+      <div class="pager__next">
+        <a href={`/portfolio/${nextItem.id}`} class="pager__link pager__link--next">
+          <span class="pager__title">{nextItem.data.title}</span>
+          <span class="pager__label">&rarr;</span>
+        </a>
+      </div>
+    ) : <div></div> }
+  </div>
 </div>

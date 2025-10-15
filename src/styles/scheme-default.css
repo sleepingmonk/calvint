@@ -1,10 +1,10 @@
-@import url('https://fonts.googleapis.com/css2?family=Orbitron:wght@400..900&family=Cutive+Mono&display=swap');
-
-@import url('https://fonts.googleapis.com/css2?family=Caveat:wght@400..700&family=Orbitron:wght@400..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Orbitron:wght@400..900&family=Cutive+Mono&display=swap');
 
 /* Variables. */
+
 :root {
   /* Scale */
+
   --ratio: 1.618;
   --s-6: calc(var(--s-5) / var(--ratio));
   --s-5: calc(var(--s-4) / var(--ratio));
@@ -22,41 +22,28 @@
   --s7: calc(var(--s6) * var(--ratio));
 
   /* Content spacing. */
+
   --measure: 60ch;
   --max-width: 1024px;
   --min-width: 40ch;
   --box-padding: var(--s1);
 
   /* Fonts */
-  --font-primary: 'Aclonica', sans-serif;
-  --font-secondary: 'Orbitron', sans-serif;
+
+  --font-primary: 'Inter', sans-serif;
+  --font-secondary: 'Playfair+Display', serif;
 
   /* Colors */
-  --color-light: #d3d9d7;
+
+  --color-light: #F7F5F3;
+  --color-dark: #1A1A1A;
   --color-shadow: #6f7170;
-  --color-dark: #0a0908;
-
-  /* --color-base-dark-xxx: #3D3D3D;
-  --color-base-dark-xx: #525252;
-  --color-base-dark-x: #666666; */
-  --color-base: #1B5299;
-  /* --color-base-light-x: #8F8F8F;
-  --color-base-light-xx: #A3A3A3;
-  --color-base-light-xxx: #B8B8B8; */
-
-  /* --color-secondary-dark-xx: #992F1E;
-  --color-secondary-dark-x: #BB3925; */
-  --color-secondary: #3A2618;
-  /* --color-secondary-light-x: #DD6755;
-  --color-secondary-light-xx: #E48577; */
-
-  /* --color-accent-warm-dark-xx: #FFBC1F;
-  --color-accent-warm-dark-x: #FFC847; */
-  --color-accent: #F0A202; /*#F18805; /* #497A29 */
-  /* --color-accent-warm-light-x: #FFE099;
-  --color-accent-warm-light-xx: #FFEDC2; */
+  --color-base: #844638;
+  --color-secondary: #C47A5C;
+  --color-accent: #E8A07B; /*#F18805; /* #497A29 */
 
   /* Contextual variable: can be overridden at the component level to affect accent elements within. */
+
   --bg: transparent;
   --heading-color: var(--color-primary);
   --accent-color: var(--color-accent);
@@ -89,9 +76,17 @@
 }
 
 .scheme-art {
-  --color-base: #3A2618;
-  --color-secondary: #1B5299;
-  --font-secondary: "Caveat", sans-serif;
+  --color-base: #844638;
+  --color-secondary: #C47A5C;
+  --color-accent: #E8A07B;
+  --font-secondary: 'Playfair+Display', serif;
+}
+
+.scheme-tech {
+  --color-base: #2E2D47;
+  --color-secondary: #2E2D47;
+  --color-accent: #4A70A5;
+  --font-secondary: 'Orbitron', serif;
 }
 
 .art-only,

@@ -41,7 +41,6 @@
   display: block;
   visibility: hidden;
   margin-block: auto;
-  /* margin-inline-end: var(--icon-offsetx); */
   width: var(--gap);
   height: var(--gap);
   cursor: pointer;
@@ -54,8 +53,6 @@
 .drop-cluster__toggle[type=checkbox]::after {
   position: absolute;
   content: '\2630';
-  /* height: var(--gap);
-  width: var(--gap); */
   display: block;
   visibility: visible;
   font-size: var(--gap);
@@ -67,7 +64,7 @@
 }
 
 .drop-cluster__toggle[type=checkbox]:checked::after {
-  color: var(--color-secondary);
+  color: var(--color-accent);
   transform: rotate(-405deg);
 }
 

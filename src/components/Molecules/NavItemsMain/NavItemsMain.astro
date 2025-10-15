@@ -1,7 +1,14 @@
 ---
 import NavItem from '../../Atoms/NavItem/NavItem.astro';
+import Switch from '../../Atoms/Switch/Switch.astro';
 ---
 
+<Switch className="scheme-switch">
+  <div slot="label" class="label">
+    <div class="tech-only">tech</div>
+    <div class="art-only">art</div>
+  </div>
+</Switch>
 <NavItem uri="/portfolio" label="portfolio" />
 <NavItem uri="/blog" label="words" />
 <NavItem uri="https://bionic.studio" label="bionic" external={true} />

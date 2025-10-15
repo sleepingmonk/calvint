@@ -25,6 +25,10 @@
   align-items: var(--align-items, flex-start);
 }
 
+.center > * {
+  inline-size: 100%;
+}
+
 /* Cluster. */
 .cluster {
   display: flex;

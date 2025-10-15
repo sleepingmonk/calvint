@@ -32,7 +32,7 @@
   margin-inline-end: var(--s-1);
 }
 
-.scheme-art .flip__container {
+.scheme-tech .flip__container {
   flex-direction: row-reverse;
   transform: rotate3d(1, 0, 0, 360deg);
   color: var(--color-light);

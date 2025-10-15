@@ -9,10 +9,10 @@
 }
 
 /* Scheme: Art */
-.scheme-art .home .with-sidebar--art {
+.scheme-tech .home .with-sidebar--tech {
   flex-direction: row-reverse;
 }
 
-.home .section--art {
+.home .section--tech {
   transition: all 0.5s ease-in-out;
 }

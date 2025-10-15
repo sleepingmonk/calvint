@@ -1,4 +1,5 @@
 .header {
+  --space: var(--s0);
   border-block-end: var(--s-2) solid var(--color-accent);
 }
 

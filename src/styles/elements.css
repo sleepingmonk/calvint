@@ -3,7 +3,7 @@ html:root {
   --space: var(--s1);
   font-family: var(--font-primary);
   line-height: var(--line-height, var(--s3));
-  font-weight: 500;
+  font-weight: 400;
   letter-spacing: .01rem;
 }
 

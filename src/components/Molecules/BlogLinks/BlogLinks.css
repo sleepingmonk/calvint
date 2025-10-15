@@ -12,23 +12,18 @@
 .blog-links .tag {
   border: 1px solid var(--color-shadow);
   border-radius: var(--s-3);
-  background: var(--bg-color, var(--color-accent));
+  background: var(--color-accent);
   padding: var(--s-5) var(--s-1);
   font-size: var(--s0);
   line-height: var(--s0);
   text-shadow: none;
 }
 
+.blog-links .scheme-tech .tag {
+  color: var(--color-light);
+}
+
 .blog-links a {
   text-decoration: none;
   line-height: 1.5rem;
-}
-
-.blog-link--art .tag {
-  --bg-color: var(--color-accent);
-}
-
-.blog-link--tech .tag {
-  --bg-color: var(--color-base);
-  color: var(--color-light);
 }

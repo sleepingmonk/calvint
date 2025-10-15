@@ -1,7 +1,8 @@
 ---
 import Section from '../../Organisms/Section/Section.astro';
 import ReelIndicator from '../../Atoms/ReelIndicator/ReelIndicator.astro';
-import quotes from './quotes.json';
+import quotesArt from './quotes-art.json';
+import quotesTech from './quotes-tech.json';
 import './SectionProof.css';
 
 interface Props {
@@ -9,8 +10,8 @@ interface Props {
 }
 
 const { className } = Astro.props;
-const total = quotes.length;
-quotes.sort(() => Math.random() - 0.5);
+quotesArt.sort(() => Math.random() - 0.5);
+quotesTech.sort(() => Math.random() - 0.5);
 ---
 
 <Section
@@ -19,10 +20,13 @@ quotes.sort(() => Math.random() - 0.5);
   brow=""
   heading=""
   bgColor="dark"
-  className=`${className ? className : ""} proof`
+  className=`${className ? className : ""} proof art-only`
 >
   <div class='reel overflowing'>
-    {quotes.map((quote, index) => (
+    {quotesArt.map((quote, index) => {
+      const total = quotesArt.length;
+
+      return (
       <div class='item cover' style="--cover-height: 100%;">
         <div class="principal">
           <quote>{quote.quote}</quote>
@@ -33,7 +37,34 @@ quotes.sort(() => Math.random() - 0.5);
           item={index}
         />
       </div>
-    ))}
+
+    )})}
+  </div>
+</Section>
+
+<Section
+  justify="center"
+  align="center"
+  brow=""
+  heading=""
+  bgColor="dark"
+  className=`${className ? className : ""} proof tech-only`
+>
+  <div class='reel overflowing'>
+    {quotesTech.map((quote, index) => {
+      const total = quotesTech.length;
+      return (
+      <div class='item cover' style="--cover-height: 100%;">
+        <div class="principal">
+          <quote>{quote.quote}</quote>
+          <cite>&mdash; {quote.cite}</cite>
+        </div>
+        <ReelIndicator
+          total={total}
+          item={index}
+        />
+      </div>
+    )})}
   </div>
 </Section>
 

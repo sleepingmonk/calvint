@@ -11,7 +11,7 @@ interface Props {
   className?: string;
 }
 
-const { variant = "default", measure = "30ch", logoHeight, bgColor = '', slot = '', className } = Astro.props;
+const { variant = "default", measure = "30ch", logoHeight = "s3", bgColor = '', slot = '', className } = Astro.props;
 const classes = [
   'header',
   `header--${variant}`,
@@ -23,7 +23,7 @@ const adjustedLogoHeight = variant == "small" || variant == "overlay-small" ? "s
 ---
 
 <div slot={slot} class={classes.join(' ')}>
-  <div class="with-sidebar" style="--sidebar-width: var(--height, var(--s4));">
+  <div class="with-sidebar" style=`--sidebar-width: var(--height, var(--${adjustedLogoHeight}));`>
     <div>
       <a href="/"><Logo height={adjustedLogoHeight} /></a>
     </div>

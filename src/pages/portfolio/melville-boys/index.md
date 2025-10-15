@@ -17,7 +17,7 @@
 
   ![The Melville Boys Poster](./poster.jpg)
 
-  ![Cast and Crew](./MelvilleBoysLobby.jpg)
+  ![Cast and Crew](./MelvilleBoysLobby.png)
 
   ![Photoshoot](./photoshoot.jpg)
 
@@ -34,7 +34,7 @@
 **Credit:** Lee\
 **Run:** 9 - 26, 2025\
 **Tickets:** <a href="https://www.echoplayers.ca/buy-tickets/the-melville-boys" target="_blank" rel="nofollow noopener">Buy Now</a>\
-**PQB News Spotlight:** <a href="https://www.pqbnews.com/entertainment/the-melville" target="_blank" rel="nofollow noopener">Read Article</a>
+**PQB News Spotlight:** <a href="https://www.pqbnews.com/entertainment/spotlight-laughs-and-loyalty-in-the-melville-boys-by-echo-players-8284053" target="_blank" rel="nofollow noopener">Read Article</a>
 
 ## A Touching Comedy by Norm Foster
 

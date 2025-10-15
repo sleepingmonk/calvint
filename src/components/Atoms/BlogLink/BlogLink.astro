@@ -2,7 +2,7 @@
 const { post } = Astro.props;
 ---
 
-<li key={post.id} class=`blog-link--${post.data.scheme}`>
+<li key={post.id} class=`scheme-${post.data.scheme}`>
   <span class="tag">#{post.data.tag}</span>
   <a href={`/blog/${post.id}`} title={post.data.description}>
    <span>{post.data.title}</span>
