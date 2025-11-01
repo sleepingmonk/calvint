@@ -1,4 +1,12 @@
 
+0.5.0 / 2025-10-31
+==================
+
+  * Some style tweaks, update Mellvile Boys and add lobby page for ECHO.
+  * fix: Scheme update, fixes and features.
+
+  38 files changed, 288 insertions(+), 372 deletions(-)
+
 0.4.2 / 2025-10-07
 ==================
 
