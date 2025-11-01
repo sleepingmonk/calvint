@@ -1,33 +1,25 @@
 ---
-import { getCollection } from 'astro:content';
-import BlogLinks from '../components/Molecules/BlogLinks/BlogLinks.astro';
-import Card from '../components/Molecules/Card/Card.astro';
-import Cover from '../components/Organisms/Cover/Cover.astro';
-import Flip from '../components/Atoms/Flip/Flip.astro';
-import Footer from '../components/Organisms/Footer/Footer.astro';
-import Header from '../components/Organisms/Header/Header.astro';
-import Nav from '../components/Molecules/Nav/Nav.astro';
-import Section from '../components/Organisms/Section/Section.astro';
 import Stark from '../layouts/Stark.astro';
-import Switch from '../components/Atoms/Switch/Switch.astro';
-import Button from '../components/Atoms/Button/Button.astro';
+import Cover from '../components/Organisms/Cover/Cover.astro';
+import Section from '../components/Organisms/Section/Section.astro';
 
 import './index.css';
 
 ---
 
-<Stark title="About Calvin">
-	<main class="" style="--bg-color: darkred;">
+<Stark title="ECHO Players Lobby">
+	<main>
 		<Cover
-			bgColor="base"
+			bgColor='base'
 			className="halftone"
+			styles={['--bg-color: darkred;']}
 		>
 			<div slot="top" class="" style="text-align: center;">
 				<h2 style="color: white; font-family: var(--font-primary);">
 					Volunteers
 				</h2>
 			</div>
-			<div slot="principal" class="principal" style="text-align: center;">
+			<div slot="principal" class="principal" style="text-align: center;  --bg-color: darkred;">
 				<video
 					src="/img/OpenHouseLoop-crushed.mp4"
 					autoplay

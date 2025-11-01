@@ -3,12 +3,14 @@ interface Props {
   bgImage?: string;
   bgColor?: string;
   className?: string;
+  styles?: string[];
 }
 
 const {
   bgImage,
   bgColor = "default",
-  className
+  className,
+  styles = [],
 } = Astro.props;
 
 const classes = [
@@ -16,14 +18,18 @@ const classes = [
   `section--color-${bgColor}`,
   `${className ? className : ""}`,
 ];
+
+styles.push('');
+
+const style = styles.join(' ');
 ---
 
-<div class={classes.join(' ')}>
+<div class={classes.join(' ')} style={style}>
   {bgImage ? (
     <div class="section__image" style={`--background-image: url(${bgImage});`}></div>
     <div class="section__tint"></div>
   ) : null}
-  <div class="section__content cover" style="padding-block: var(--s1)">
+  <div class="section__content cover" style="padding-block: var(--s1);">
     <slot name="top" />
     <slot name="principal" />
     <slot name="bottom" />
