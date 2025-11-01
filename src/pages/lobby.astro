@@ -1,0 +1,51 @@
+---
+import { getCollection } from 'astro:content';
+import BlogLinks from '../components/Molecules/BlogLinks/BlogLinks.astro';
+import Card from '../components/Molecules/Card/Card.astro';
+import Cover from '../components/Organisms/Cover/Cover.astro';
+import Flip from '../components/Atoms/Flip/Flip.astro';
+import Footer from '../components/Organisms/Footer/Footer.astro';
+import Header from '../components/Organisms/Header/Header.astro';
+import Nav from '../components/Molecules/Nav/Nav.astro';
+import Section from '../components/Organisms/Section/Section.astro';
+import Stark from '../layouts/Stark.astro';
+import Switch from '../components/Atoms/Switch/Switch.astro';
+import Button from '../components/Atoms/Button/Button.astro';
+
+import './index.css';
+
+---
+
+<Stark title="About Calvin">
+	<main class="" style="--bg-color: darkred;">
+		<Cover
+			bgColor="base"
+			className="halftone"
+		>
+			<div slot="top" class="" style="text-align: center;">
+				<h2 style="color: white; font-family: var(--font-primary);">
+					Volunteers
+				</h2>
+			</div>
+			<div slot="principal" class="principal" style="text-align: center;">
+				<video
+					src="/img/OpenHouseLoop-crushed.mp4"
+					autoplay
+					loop
+					muted
+					playsinline
+					controls
+					style="width: 100%; max-width: 800px; border: 4px solid white; border-radius: 8px;"
+				></video>
+			</div>
+			<div slot="bottom" style="color: white; text-align: center;">
+				<p>All Ages Welcome!</p>
+			</div>
+		</Cover>
+		<Section
+			bgColor='dark'
+			className="halftone"
+		></Section>
+	</main>
+	<!-- <Footer /> -->
+</Stark>

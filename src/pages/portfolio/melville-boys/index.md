@@ -33,7 +33,6 @@
 
 **Credit:** Lee\
 **Run:** 9 - 26, 2025\
-**Tickets:** <a href="https://www.echoplayers.ca/buy-tickets/the-melville-boys" target="_blank" rel="nofollow noopener">Buy Now</a>\
 **PQB News Spotlight:** <a href="https://www.pqbnews.com/entertainment/spotlight-laughs-and-loyalty-in-the-melville-boys-by-echo-players-8284053" target="_blank" rel="nofollow noopener">Read Article</a>
 
 ## A Touching Comedy by Norm Foster
@@ -42,9 +41,8 @@ Two brothers, two sisters, life and legacy. That's a lot to pack into one weeken
 
 I've been cast as Lee, the older brother, grappling with reality while his younger brother (Owen) tries to do anything but. I look forward to finding the balance between situational comedy and deep emotion in this role.
 
-I'm excited to work with this amazing team. Come see the show in October!
+### Update
 
-Tickets on sale NOW!
+I can't believe it's over. We had an amazing run with sold-out shows and standing ovations. The cast and crew were fantastic, and I am so grateful to have been part of this production. I can't wait for the next one!
 
-<a href="https://www.echoplayers.ca/buy-tickets/the-melville-boys" target="_blank" rel="nofollow noopener" class="button button--small button--secondary">Ticket Info</a>
-
+Speaking of the next one, watch for The Dating Game in February 2026!

@@ -3,6 +3,7 @@
   flex-direction: column;
   justify-content: center;
   block-size: 100%;
+  gap: var(--s-5);
 }
 
 .switch__wrapper {
@@ -15,7 +16,7 @@
 
 .switch__wrapper + .label * {
   user-select: none;
-  font-size: var(--s-3);
+  font-size: var(--s-2);
   line-height: var(--s-2);
   text-transform: uppercase;
   text-align: center;

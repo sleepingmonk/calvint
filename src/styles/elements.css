@@ -19,7 +19,6 @@ h1, h2, h3, h4, h5 {
   color: var(--heading-color, inherit);
   hyphens: auto;
   word-wrap: break-word;
-  max-inline-size: calc(100vw - var(--box-padding) * 2);
 }
 
 h1 {
