@@ -33,7 +33,7 @@
 
 **Credit:** Lee\
 **Run:** 9 - 26, 2025\
-**PQB News Spotlight:** <a href="https://www.pqbnews.com/entertainment/spotlight-laughs-and-loyalty-in-the-melville-boys-by-echo-players-8284053" target="_blank" rel="nofollow noopener">Read Article</a>
+**PQB News Spotlight:** <a href="https://pqbnews.com/2025/10/03/spotlight-laughs-and-loyalty-in-the-melville-boys-by-echo-players/" target="_blank" rel="nofollow noopener">Read Article</a>
 
 ## A Touching Comedy by Norm Foster
 
