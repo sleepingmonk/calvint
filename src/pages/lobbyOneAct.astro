@@ -1,0 +1,32 @@
+---
+import Stark from '../layouts/Stark.astro';
+import Cover from '../components/Organisms/Cover/Cover.astro';
+import Section from '../components/Organisms/Section/Section.astro';
+
+import './index.css';
+
+---
+
+<Stark title="ECHO Players Lobby">
+	<main>
+		<Cover
+			bgColor='base'
+			className="halftone"
+			styles={['--bg-color: #aa3333;']}
+		>
+			<div slot="top" class="" style="text-align: center;">
+			</div>
+			<div slot="principal" class="principal" style="text-align: center;  --bg-color: darkred; color: white;">
+				<h2>2025 Vancouver Island</h2>
+				<h1>One Act Play Festival!</h1>
+			</div>
+			<div slot="bottom" style="color: white; text-align: center;">
+			</div>
+		</Cover>
+		<Section
+			bgColor='dark'
+			className="halftone"
+		></Section>
+	</main>
+	<!-- <Footer /> -->
+</Stark>
