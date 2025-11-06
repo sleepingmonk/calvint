@@ -4,6 +4,7 @@ import Cover from '../components/Organisms/Cover/Cover.astro';
 import Section from '../components/Organisms/Section/Section.astro';
 
 import './index.css';
+import '../styles/animations.css';
 
 ---
 
@@ -17,6 +18,7 @@ import './index.css';
 			<div slot="top" class="" style="text-align: center;">
 			</div>
 			<div slot="principal" class="principal" style="text-align: center;  --bg-color: darkred; color: white;">
+				<img src="/img/ECHOMasks.png" alt="ECHO Masks" class="levitate" style="max-width: 300px;"/>
 				<h2>2025 Vancouver Island</h2>
 				<h1>One Act Play Festival!</h1>
 			</div>
@@ -27,17 +29,6 @@ import './index.css';
 			bgColor='dark'
 			className="halftone"
 		>
-			<div style="text-align: center; color: white;">
-				<video
-					src="/img/OpenHouseLoop-crushed.mp4"
-					autoplay
-					loop
-					muted
-					playsinline
-					controls
-					style="width: 100%; max-width: 1024px; border: 2px solid white; border-radius: 8px;"
-				></video>
-			</div>
 		</Section>
 	</main>
 	<!-- <Footer /> -->
