@@ -1,0 +1,33 @@
+---
+import Stark from '../layouts/Stark.astro';
+import Cover from '../components/Organisms/Cover/Cover.astro';
+import Section from '../components/Organisms/Section/Section.astro';
+
+import './index.css';
+
+---
+
+<Stark title="Sorry">
+	<main>
+		<Cover
+			bgColor='base'
+			className="halftone"
+			styles={['--bg-color: #aa3333;']}
+		>
+			<div slot="top" class="" style="text-align: center;">
+				<h1 style="color: white; font-family: var(--font-primary);">
+				</h1>
+			</div>
+			<div slot="principal" class="principal" style="text-align: center;  --bg-color: darkred;">
+				<a href="javascript: alert('Sorry :(')" class="button button--large">Tap</a>
+			</div>
+			<div slot="bottom" style="color: white; text-align: center;">
+			</div>
+		</Cover>
+		<Section
+			bgColor='dark'
+			className="halftone"
+		></Section>
+	</main>
+	<!-- <Footer /> -->
+</Stark>
