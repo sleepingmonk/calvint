@@ -1,4 +1,11 @@
 
+0.7.0 / 2026-02-18
+==================
+
+  * Add Dating Game lobby video.
+
+  3 files changed, 36 insertions(+), 1 deletion(-)
+
 0.6.3 / 2025-11-29
 ==================
 
