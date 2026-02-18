@@ -29,7 +29,7 @@ const style = styles.join(' ');
     <div class="section__image" style={`--background-image: url(${bgImage});`}></div>
     <div class="section__tint"></div>
   ) : null}
-  <div class="section__content cover" style="padding-block: var(--s1);">
+  <div class="section__content cover" style="padding-block: var(--cover-padding), var(--s1)); padding-block-start: var(--cover-padding, inherit); padding-block-end: var(--cover-padding, inherit);">
     <slot name="top" />
     <slot name="principal" />
     <slot name="bottom" />
