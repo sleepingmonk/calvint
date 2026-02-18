@@ -9,23 +9,15 @@ import './index.css';
 
 <Stark title="ECHO Players Lobby">
 	<main>
-		<Cover
-			bgColor='base'
-			className=""
-			styles={['--bg-color: #aa3333; --cover-padding: 0;']}
-		>
-			<div slot="principal" class="principal" style="text-align: center;  --bg-color: darkred;">
-				<video
-					src="/img/DGLobby-crushed.mp4"
-					autoplay
-					loop
-					muted
-					playsinline
-					controls
-					style="width: 100%; max-width: 100vw; border: 4px solid white; border-radius: 8px;"
-				></video>
-			</div>
-		</Cover>
+		<video
+			src="/img/DGLobby-crushed.mp4"
+			autoplay
+			loop
+			muted
+			playsinline
+			controls
+			style="height: 100vh;border: 0 solid white;"
+		></video>
 	</main>
 	<!-- <Footer /> -->
 </Stark>
