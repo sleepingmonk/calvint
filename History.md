@@ -1,4 +1,12 @@
 
+0.8.0 / 2026-03-07
+==================
+
+  * chore: improved Drop Cluster.
+  * content: Add note from Nigel.
+
+  4 files changed, 110 insertions(+), 47 deletions(-)
+
 0.7.3 / 2026-02-18
 ==================
 
