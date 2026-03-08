@@ -1,4 +1,11 @@
 
+0.8.2 / 2026-03-07
+==================
+
+  * fix: container on video.
+
+  1 file changed, 2 insertions(+), 1 deletion(-)
+
 0.8.1 / 2026-03-07
 ==================
 
