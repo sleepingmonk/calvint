@@ -1,4 +1,11 @@
 
+0.8.3 / 2026-04-07
+==================
+
+  * content: Shadows Lobby update.
+
+  6 files changed, 27 insertions(+), 24 deletions(-)
+
 0.8.2 / 2026-03-07
 ==================
 
