@@ -1,0 +1,25 @@
+---
+import Stark from '../layouts/Stark.astro';
+import Cover from '../components/Organisms/Cover/Cover.astro';
+import Section from '../components/Organisms/Section/Section.astro';
+
+import './index.css';
+
+---
+
+<Stark title="ECHO Players Lobby">
+	<main style="background: black;">
+		<div style="margin-inline: auto; inline-size: 100%; max-inline-size: calc(100dvh / 9 * 16);">
+			<video
+				src="/img/lobbyMainStage-crushed.mp4"
+				autoplay
+				loop
+				muted
+				playsinline
+				controls
+				style="height: 100dvh; display: block; margin: auto;"
+			></video>
+		</div>
+	</main>
+	<!-- <Footer /> -->
+</Stark>
