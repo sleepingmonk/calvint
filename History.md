@@ -1,4 +1,11 @@
 
+0.8.4 / 2026-04-14
+==================
+
+  * Update shadows lobby video.
+
+  1 file changed, 0 insertions(+), 0 deletions(-)
+
 0.8.3 / 2026-04-07
 ==================
 
